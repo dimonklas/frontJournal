@@ -65,7 +65,7 @@ public enum MongoDB {
         );
     }
 
-    @Step("Добавить заявку '{claimName}' с референсом {ref}")
+    @Step("Добавить заявку '{claimName}' с референсом {ref} в БД")
     public void addUnfinishedClaims(long ref, String claimName, String date, String ldap, String claimUrl)
         throws ParseException {
         MongoDatabase database = mongoClient.getDatabase(dbName);

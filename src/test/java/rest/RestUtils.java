@@ -1,5 +1,6 @@
 package rest;
 
+import io.qameta.allure.Step;
 import setup.ConfVars;
 
 import static com.jayway.restassured.RestAssured.given;
@@ -8,6 +9,7 @@ import static org.hamcrest.Matchers.hasXPath;
 public class RestUtils {
     ConfVars confVars = ConfVars.getInstance();
 
+    @Step("Добавить заявку 'IDENTPHYS' с референсом {ref} через сервис")
     public void addClaim(String date, String ref, String ldap) {
         given().
             header("Content-Type", "text/xml;charset=UTF-8").
