@@ -1,0 +1,63 @@
+group 'EmergencyMode'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'io.qameta.allure'
+
+sourceCompatibility = 1.8
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.1'
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.3"
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+allure {
+    version = '2.2.1'
+    autoconfigure = true
+    aspectjweaver = true
+    allureJavaVersion = '2.0-BETA14'
+}
+
+dependencies {
+    testCompile 'com.codeborne:selenide:4.6'
+    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.5.3'
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.2'
+    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.0-BETA14'
+    compile group: 'io.qameta.allure', name: 'allure-assertj', version: '2.0-BETA18'
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.4.0'
+    testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '2.9.0'
+}
+
+test {
+    systemProperties = System.getProperties()
+    if (systemProperties['os.name'].toLowerCase().contains('windows')) {
+        systemProperties['webdriver.chrome.driver'] = "${projectDir}/src/test/resources/chromedriver.exe"
+    } else {
+        systemProperties['webdriver.chrome.driver'] = "${projectDir}/src/test/resources/chromedriver"
+    }
+
+    useTestNG {}
+}
+
+
+
+
+
