@@ -4,7 +4,6 @@ import MethodUtils.Utils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 
 import java.text.ParseException;
 
@@ -159,25 +158,19 @@ public class FrontJournalPage {
      * 'date' should be in format d-MM
      */
     @Step("Указать дату начала поиска равной {date} с помощью js")
-    public void setStartSearchDate(String date) throws ParseException {
+    public void setStartSearchDate(String date) throws Exception {
         $(startSearchDate).click();
         selectDateInDatepicker(date);
     }
 
-    private void selectDateInDatepicker(String date) throws ParseException {
+    private void selectDateInDatepicker(String date) throws Exception {
         String day = date.split("-")[0];
         String monthName = utils.changeDateFormat(date, "d-MM", "MMM").substring(0, 3);
 
+        Thread.sleep(1000);
         $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
             .shouldBe(Condition.visible).click();
-        try {
-            $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
-        } catch (NoSuchElementException e) {
-            $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
-                .shouldBe(Condition.visible).click();
-            $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
-        }
-
+        $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
         $(By.xpath(
             "//td[contains(@class, \"md-calendar-month-label\") and contains(., '" + monthName + "')]/../.." +
                 "//td[contains(@class, 'md-calendar-date')]/span[text()='" + day + "']")
