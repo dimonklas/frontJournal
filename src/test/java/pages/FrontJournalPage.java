@@ -168,7 +168,7 @@ public class FrontJournalPage {
         String monthName = utils.changeDateFormat(date, "d-MM", "MMM").substring(0, 3);
 
         $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
-            .shouldBe(Condition.enabled).click();
+            .shouldBe(Condition.visible).click();
         $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
         $(By.xpath(
             "//td[contains(@class, \"md-calendar-month-label\") and contains(., '" + monthName + "')]/../.." +
