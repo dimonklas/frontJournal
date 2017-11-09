@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce3eb77b-324b-48dc-b875-db3862449750" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/pages/FrontJournalPage.class" afterPath="$PROJECT_DIR$/build/classes/test/pages/FrontJournalPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -101,8 +98,8 @@
       <file leaf-file-name="TestRunnerFJ.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1063">
-              <caret line="734" column="27" lean-forward="true" selection-start-line="734" selection-start-column="27" selection-end-line="734" selection-end-column="27" />
+            <state relative-caret-position="463">
+              <caret line="734" column="25" lean-forward="true" selection-start-line="734" selection-start-column="25" selection-end-line="734" selection-end-column="25" />
               <folding>
                 <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -127,21 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+            <state relative-caret-position="240">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -186,8 +173,8 @@
       <file leaf-file-name="FrontJournalPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="170" column="49" lean-forward="true" selection-start-line="170" selection-start-column="49" selection-end-line="170" selection-end-column="49" />
+            <state relative-caret-position="582">
+              <caret line="177" column="101" lean-forward="false" selection-start-line="177" selection-start-column="101" selection-end-line="177" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -206,6 +193,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>accInfo</find>
+      <find>//td/span[text()='</find>
       <find>searchClaimsInFrontJournalByFioAndBirthdayPhys</find>
     </findStrings>
   </component>
@@ -534,9 +522,9 @@
         <option value="$PROJECT_DIR$/src/test/java/setup/ConfVars.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testdata/testData.properties" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunnerFJ.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -544,7 +532,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1985" />
+    <option name="x" value="65" />
     <option name="y" value="-4" />
     <option name="width" value="1855" />
     <option name="height" value="1084" />
@@ -1012,11 +1000,11 @@
     <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 10h 09m 48s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByFioAndBirthday - 2017.11.07 at 16h 45m 20s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 11h 48m 40s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByFioAndBirthday - 2017.11.07 at 16h 46m 06s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 12h 06m 42s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByFioAndBirthday - 2017.11.08 at 09h 11m 03s.xml">
       <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" configurationId="TestNG" />
@@ -1035,7 +1023,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1083,13 +1071,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java</url>
-          <line>171</line>
+          <line>179</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java</url>
-          <line>169</line>
+          <line>170</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
@@ -1485,10 +1473,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="177" column="101" lean-forward="false" selection-start-line="177" selection-start-column="101" selection-end-line="177" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1063">
-          <caret line="734" column="27" lean-forward="true" selection-start-line="734" selection-start-column="27" selection-end-line="734" selection-end-column="27" />
+        <state relative-caret-position="463">
+          <caret line="734" column="25" lean-forward="true" selection-start-line="734" selection-start-column="25" selection-end-line="734" selection-end-column="25" />
           <folding>
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1512,26 +1516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="170" column="49" lean-forward="true" selection-start-line="170" selection-start-column="49" selection-end-line="170" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
         </state>
       </provider>

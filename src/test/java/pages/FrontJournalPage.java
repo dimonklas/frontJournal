@@ -4,6 +4,7 @@ import MethodUtils.Utils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 
 import java.text.ParseException;
 
@@ -169,7 +170,14 @@ public class FrontJournalPage {
 
         $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
             .shouldBe(Condition.visible).click();
-        $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
+        try {
+            $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
+        } catch (NoSuchElementException e) {
+            $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
+                .shouldBe(Condition.visible).click();
+            $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
+        }
+
         $(By.xpath(
             "//td[contains(@class, \"md-calendar-month-label\") and contains(., '" + monthName + "')]/../.." +
                 "//td[contains(@class, 'md-calendar-date')]/span[text()='" + day + "']")
