@@ -7,7 +7,7 @@ import java.util.Map;
 public class DataBaseUtils {
     Utils utils = new Utils();
 
-    public Map<String, String> getClaimsDataFromDataBase(String ref, String idSystem) throws Exception {
+    public Map<String, String> getClaimsDataFromDataBase(String ref) throws Exception {
         Map<String, String> updatedData = new LinkedHashMap<String, String>();
 
         String claimInfo = MongoDB.INSTANCE.getClaimInfoByRef(ref).get(0);
@@ -18,6 +18,7 @@ public class DataBaseUtils {
         updatedData.put("date", utils.changeDate(date, "dd MMM yyyy HH:mm", 11, 0));
 
         String operation = utils.getRegex("\"idp\"\\s*:\\s*\"([\\S]+?)\"", claimInfo);
+        String idSystem =  utils.getRegex("\"ids\"\\s*:\\s*\"([\\S]+?)\"", claimInfo);
         String operationInfo = MongoDB.INSTANCE.getClaimInfo(idSystem.toUpperCase(), operation.toUpperCase()).get(0);
         String operationName = utils.getRegex("\"RU\"\\s*:\\s*\"([\\S\\s]+?)\"", operationInfo);
 

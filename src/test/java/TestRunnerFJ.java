@@ -28,14 +28,14 @@ public class TestRunnerFJ extends SetupAndTeardown {
     enum OperationState {NEW, INWORK}
 
     @Description("Поиск заявки по референсу")
-    @Test(groups = "FrontJournal")
+    @Test(groups = "FrontJournal", priority = 1)
     public void searchClaimsInFrontJournalByReference() throws Exception {
-        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -2));
+        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
         Long ref = utils.generateClaimRef();
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            ref,"IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), confVars.OPER_LDAP,
+            ref, "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), confVars.OPER_LDAP,
             confVars.FRONT_JOURNAL_URL
         );
 
@@ -47,7 +47,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
         frontJournal.waitingForSearchResults("1");
 
-        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString(), "wave");
+        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString());
 
         assertThat(frontJournal.getClaimDate()).isEqualTo(claimData.get("date"));
 
@@ -73,9 +73,9 @@ public class TestRunnerFJ extends SetupAndTeardown {
     }
 
     @Description("Поиск заявки по деталям")
-    @Test(groups = "FrontJournal")
+    @Test(groups = "FrontJournal", priority = 10)
     public void searchClaimsInFrontJournalByDetails() throws Exception {
-        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -2));
+        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
         Long ref = utils.generateClaimRef();
 
@@ -91,7 +91,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
         frontJournal.waitingForSearchResults("1");
 
-        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString(), "wave");
+        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString());
 
         assertThat(frontJournal.getClaimDate()).isEqualTo(claimData.get("date"));
 
@@ -123,14 +123,14 @@ public class TestRunnerFJ extends SetupAndTeardown {
     }
 
     @Description("Поиск заявки по операции")
-    @Test(groups = "FrontJournal")
+    @Test(groups = "FrontJournal", priority = 20)
     public void searchClaimsInFrontJournalByOperation() throws Exception {
-        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -2));
+        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
         Long ref = utils.generateClaimRef();
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            ref,"UNIPACKSAS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), confVars.OPER_LDAP,
+            ref, "WAVE","UNIPACKSAS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), confVars.OPER_LDAP,
             confVars.FRONT_JOURNAL_URL
         );
 
@@ -144,7 +144,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
         frontJournal.waitingForSearchResults("1");
 
-        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString(), "wave");
+        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString());
 
         assertThat(frontJournal.getClaimDate()).isEqualTo(claimData.get("date"));
 
@@ -163,15 +163,15 @@ public class TestRunnerFJ extends SetupAndTeardown {
     }
 
     @Description("Поиск заявки по операции и состоянию")
-    @Test(groups = "FrontJournal")
+    @Test(groups = "FrontJournal", priority = 30)
     public void searchClaimsInFrontJournalByOperationAndState() throws Exception {
 
-        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -2));
+        MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
         Long ref = utils.generateClaimRef();
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            ref,"UNIPACKSAS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), confVars.OPER_LDAP,
+            ref, "WAVE","UNIPACKSAS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), confVars.OPER_LDAP,
             confVars.FRONT_JOURNAL_URL
         );
 
@@ -187,7 +187,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
         frontJournal.waitingForSearchResults("1");
 
-        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString(), "wave");
+        Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(ref.toString());
 
         assertThat(frontJournal.getClaimDate()).isEqualTo(claimData.get("date"));
 
@@ -211,10 +211,10 @@ public class TestRunnerFJ extends SetupAndTeardown {
     }
 
     @Description("Поиск заявок за несколько дней")
-    @Test(groups = "FrontJournal")
+    @Test(groups = "FrontJournal", priority = 40)
     public void searchClaimsInSeveralDays() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
-            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -2)
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
         );
 
         List<Long> refs = new LinkedList<>();
@@ -222,14 +222,14 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(0),"IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1),"UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -24),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -24),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -242,7 +242,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         frontJournal.waitingForSearchResults("2");
 
         for(int i = 0; i < refs.size(); i++) {
-            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString(), "wave");
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
 
             assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
 
@@ -261,10 +261,10 @@ public class TestRunnerFJ extends SetupAndTeardown {
     }
 
     @Description("Поиск всех заявок за один день")
-    @Test(groups = "FrontJournal")
+    @Test(groups = "FrontJournal", priority = 50)
     public void searchAllClaimsInOneDay() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
-            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -2)
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
         );
 
         List<Long> refs = new LinkedList<>();
@@ -272,14 +272,14 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(0),"IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1),"UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -292,7 +292,948 @@ public class TestRunnerFJ extends SetupAndTeardown {
         frontJournal.waitingForSearchResults("2");
 
         for(int i = 0; i < refs.size(); i++) {
-            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString(), "wave");
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок физлица по номеру карты")
+    @Test(groups = "FrontJournalPhys", priority = 60)
+    public void searchClaimsInFrontJournalByCardNumberPhys() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSearchByPhysCardNumberButton();
+
+//        frontJournal.fillCardNumberInput(confVars.PHYS_CARD_NUMBER.substring(8));
+//
+//        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+//
+//        frontJournal.clickContinueButton();
+//
+//        frontJournal.clickSearchButton();
+//
+//        frontJournal.waitingForSearchResults("2");
+//
+//        for(int i = 0; i < refs.size(); i++) {
+//            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+//
+//            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+//
+//            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+//
+//            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+//
+//            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+//
+//            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+//
+//            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+//
+//            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+//        }
+//
+//        frontJournal.clickEditSearchParamsButton();
+
+        frontJournal.fillCardNumberInput("8888888888888888");
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("0");
+
+        frontJournal.clickEditSearchParamsButton();
+
+        frontJournal.fillCardNumberInput(confVars.PHYS_CARD_NUMBER);
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for(int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок физлица по ID в ЕКБ")
+    @Test(groups = "FrontJournal", priority = 70)
+    public void searchClaimsInFrontJournalByIdEkbPhys() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSearchByPhysIdEkbButton();
+
+        frontJournal.fillIdEkbInput(confVars.ID_EKB);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for(int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок физлица по ИНН")
+    @Test(groups = "FrontJournal", priority = 80)
+    public void searchClaimsInFrontJournalByInnPhys() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSearchByPhysInnButton();
+
+        frontJournal.fillInnInput(confVars.INN);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for(int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок физлица по номеру телефона")
+    @Test(groups = "FrontJournal", priority = 90)
+    public void searchClaimsInFrontJournalByPhonePhys() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.fillPhoneInput(confVars.PHONE_NUMBER);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for(int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок физлица по серии и номеру документа")
+    @Test(groups = "FrontJournal", priority = 100)
+    public void searchClaimsInFrontJournalByDocSeriesAndNumberPhys() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSearchByPhysDocSeriesAndNumberButton();
+
+        frontJournal.fillDocSeriesInput(confVars.DOC_SERIES);
+
+        frontJournal.fillDocNumberInput(confVars.DOC_NUMBER);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for(int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+
+        frontJournal.clickEditSearchParamsButton();
+
+        frontJournal.fillDocSeriesInput("ьч");
+
+        frontJournal.fillDocNumberInput("100000");
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("0");
+
+        frontJournal.clickEditSearchParamsButton();
+
+        frontJournal.fillDocSeriesInput("");
+
+        frontJournal.fillDocNumberInput(confVars.DOC_NUMBER);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for(int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок физлица по ФИО и ДР")
+    @Test(groups = "FrontJournal", priority = 110)
+    public void searchClaimsInFrontJournalByFioAndBirthdayPhys() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(0), "WAVE","IDENTPHYS", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addUnfinishedClaims(
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSearchByPhysFioAndBirthdayButton();
+
+        frontJournal.fillLastNameInput(confVars.LAST_NAME);
+
+        frontJournal.fillFirstNameInput(confVars.FIRST_NAME);
+
+        frontJournal.fillPatronymicInput(confVars.PATRONYMIC);
+
+        frontJournal.setBirthdate(confVars.BIRTHDATE);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок юрлица по полному номеру карты")
+    @Test(groups = "FrontJournal", priority = 120)
+    public void searchJurFaceClaimsInFrontJournalByCardNumber() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurCardNumberButton();
+
+        frontJournal.fillCardNumberInput(confVars.PHYS_CARD_NUMBER);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок ЧП по 8 последним цифрам номера карты")
+    @Test(groups = "FrontJournal", priority = 130)
+    public void searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurCardNumberButton();
+
+        frontJournal.fillCardNumberInput(confVars.PRIVATE_ENTERPRISE_CARD_NUMBER.substring(8));
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок юрлица по номеру телефона")
+    @Test(groups = "FrontJournal", priority = 140)
+    public void searchJurFaceClaimsInFrontJournalByPhoneNumber() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.fillPhoneInput(confVars.PHONE_NUMBER);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок юрлица по ЕКБ ID")
+    @Test(groups = "FrontJournal", priority = 150)
+    public void searchJurFaceClaimsInFrontJournalByIdEkb() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurIdEkbButton();
+
+        frontJournal.fillIdEkbInput(confVars.JUR_ID_EKB);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок юрлица по ОКПО")
+    @Test(groups = "FrontJournal", priority = 160)
+    public void searchJurFaceClaimsInFrontJournalByOkpo() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurInnOkpoButton();
+
+        frontJournal.fillInnInput(confVars.JUR_OKPO);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок ЧП по ИНН")
+    @Test(groups = "FrontJournal", priority = 170)
+    public void searchPrivateEnterpriseClaimsInFrontJournalByInn() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurInnOkpoButton();
+
+        frontJournal.fillInnInput(confVars.PRIVATE_ENTERPRISE_INN);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок юрлица по расчетному счету")
+    @Test(groups = "FrontJournal", priority = 180)
+    public void searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurPaymentAccountButton();
+
+        frontJournal.fillPaymentAccountInput(confVars.PRIVATE_ENTERPRISE_PAYMENT_ACCOUNT);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
+
+            assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
+
+            assertThat(frontJournal.getClaimName(i)).isEqualTo(claimData.get("name"));
+
+            assertThat(frontJournal.getClaimFio(i).toUpperCase()).isEqualTo(claimData.get("fio"));
+
+            assertThat(frontJournal.getClaimInn(i)).isEqualTo(claimData.get("inn"));
+
+            assertThat(frontJournal.getClaimLdap(i)).isEqualTo(claimData.get("ldap"));
+
+            assertThat(frontJournal.getClaimState(i)).isEqualTo(claimData.get("state"));
+
+            assertThat(frontJournal.getClaimDetails(i)).isEqualTo(claimData.get("details"));
+        }
+    }
+
+    @Description("Поиск заявок юрлица по ФИО и ДР")
+    @Test(groups = "FrontJournal", priority = 190)
+    public void searchJurFaceClaimsInFrontJournalByFioAndBirthday() throws Exception {
+        MongoDB.INSTANCE.deleteClaimsOlderDate(
+            confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
+        );
+
+        List<Long> refs = new LinkedList<>();
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(0), "P48", "KOPILKA", utils.getCurrentDate("yyyy-MM-dd HH:mm"),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        refs.add(utils.generateClaimRef());
+
+        MongoDB.INSTANCE.addJurUnfinishedClaims(
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
+        );
+
+        frontJournal = page(FrontJournalPage.class);
+
+        frontJournal.clickOnlyMyClaimsRadiobutton();
+
+        frontJournal.clickChooseClientRadiobutton();
+
+        frontJournal.clickSelectJurTabButton();
+
+        frontJournal.clickSearchByJurFioAndBirthdayButton();
+
+        frontJournal.fillLastNameInput(confVars.LAST_NAME);
+
+        frontJournal.fillFirstNameInput(confVars.FIRST_NAME);
+
+        frontJournal.fillPatronymicInput(confVars.PATRONYMIC);
+
+        frontJournal.setBirthdate(confVars.BIRTHDATE);
+
+        frontJournal.setStartSearchDate(utils.getCurrentDate("d-MM"));
+
+        frontJournal.clickContinueButton();
+
+        frontJournal.clickSearchButton();
+
+        frontJournal.waitingForSearchResults("2");
+
+        for (int i = 0; i < refs.size(); i++) {
+            Map<String, String> claimData = dataBaseUtils.getClaimsDataFromDataBase(refs.get(i).toString());
 
             assertThat(frontJournal.getClaimDate(i)).isEqualTo(claimData.get("date"));
 

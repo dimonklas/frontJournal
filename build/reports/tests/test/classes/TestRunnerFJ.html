@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">6</div>
+<div class="counter">14</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">13.313s</div>
+<div class="counter">1m2.44s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,32 +79,72 @@
 </thead>
 <tr>
 <td class="success">searchAllClaimsInOneDay</td>
-<td>3.535s</td>
+<td>1.779s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByCardNumberBelongPhys</td>
+<td>7.870s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByCardNumberPhys</td>
+<td>12.947s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">searchClaimsInFrontJournalByDetails</td>
-<td>4.371s</td>
+<td>7.267s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByDocSeriesAndNumberPhys</td>
+<td>5.601s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByFioAndBirthdayPhys</td>
+<td>4.191s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByIdEkbPhys</td>
+<td>2.530s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByInnPhys</td>
+<td>2.891s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">searchClaimsInFrontJournalByOperation</td>
-<td>1.041s</td>
+<td>1.475s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">searchClaimsInFrontJournalByOperationAndState</td>
-<td>2.229s</td>
+<td>1.905s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchClaimsInFrontJournalByPhonePhys</td>
+<td>2.704s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">searchClaimsInFrontJournalByReference</td>
-<td>0.989s</td>
+<td>3.626s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">searchClaimsInSeveralDays</td>
-<td>1.148s</td>
+<td>1.912s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumberBelongClient</td>
+<td>5.741s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -112,11 +152,11 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>8714 [Test worker] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[10.56.0.53:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-8966 [Test worker] INFO org.mongodb.driver.cluster - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=10.56.0.53:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
-9047 [cluster-ClusterId{value='59f314a2a542e24bdaa97b09', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:42810}] to 10.56.0.53:27017
-9053 [cluster-ClusterId{value='59f314a2a542e24bdaa97b09', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=10.56.0.53:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 3]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=2183796}
-9113 [Test worker] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:42811}] to 10.56.0.53:27017
+<pre>15176 [Test worker] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[10.56.0.53:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15616 [Test worker] INFO org.mongodb.driver.cluster - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=10.56.0.53:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+15674 [cluster-ClusterId{value='5a0072e83b54b80dbc2b6ebb', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:213913}] to 10.56.0.53:27017
+15679 [cluster-ClusterId{value='5a0072e83b54b80dbc2b6ebb', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=10.56.0.53:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 3]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=2559938}
+15734 [Test worker] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:213914}] to 10.56.0.53:27017
 </pre>
 </span>
 </div>
@@ -128,7 +168,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at 27.10.2017 14:12:50</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at 06.11.2017 16:35:22</p>
 </div>
 </div>
 </body>

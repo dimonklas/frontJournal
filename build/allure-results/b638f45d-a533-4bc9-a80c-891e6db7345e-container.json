@@ -1,1 +1,0 @@
-{"uuid":"b638f45d-a533-4bc9-a80c-891e6db7345e","name":"setup.SetupAndTeardown.afterMethod","description":"","start":1509102202876,"stop":1509102202924,"children":["95d82999-a513-41c2-b7f9-d554e3cc9b50"],"afters":[{"name":"afterMethod","status":"passed","stage":"finished","description":"","start":1509102202876,"stop":1509102202924}]}

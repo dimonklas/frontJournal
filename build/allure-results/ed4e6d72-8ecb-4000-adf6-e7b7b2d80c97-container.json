@@ -1,1 +1,0 @@
-{"uuid":"ed4e6d72-8ecb-4000-adf6-e7b7b2d80c97","name":"setup.SetupAndTeardown.login","description":"","start":1509102768734,"stop":1509102769343,"children":["aac08ca0-6d19-4e04-a3df-4190db52bda1"],"befores":[{"name":"login","status":"passed","stage":"finished","description":"","start":1509102768734,"stop":1509102769343}]}

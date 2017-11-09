@@ -10,7 +10,7 @@ public class RestUtils {
     ConfVars confVars = ConfVars.getInstance();
 
     @Step("Добавить заявку 'IDENTPHYS' с референсом {ref} через сервис")
-    public void addClaim(String date, String ref, String ldap) {
+    public void addClaim(String date, String ref, String ldap) throws Exception {
         given().
             header("Content-Type", "text/xml;charset=UTF-8").
             body(
@@ -40,5 +40,6 @@ public class RestUtils {
             post(confVars.MODIFY_RECORD_URL).
             then().
             body(hasXPath("//*[self::answer[@status='OK']]"));
+        Thread.sleep(3000);
     }
 }

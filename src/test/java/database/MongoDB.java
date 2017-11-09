@@ -65,19 +65,21 @@ public enum MongoDB {
         );
     }
 
-    @Step("Добавить заявку '{claimName}' с референсом {ref} в БД")
-    public void addUnfinishedClaims(long ref, String claimName, String date, String ldap, String claimUrl)
+    @Step("Добавить заявку физлица '{claimName}' с референсом {ref} в БД")
+    public void addUnfinishedClaims(long ref, String ids, String claimName, String date, String ldap, String claimUrl)
         throws ParseException {
         MongoDatabase database = mongoClient.getDatabase(dbName);
         MongoCollection<Document> collection = database.getCollection("operation");
 
         Document doc = new Document("_id", new Document("ref", Long.toString(ref))
                                                 .append("idp", claimName)
-                                                .append("ids", "WAVE"))
+                                                .append("ids", ids.toUpperCase()))
                     .append("dc", new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date))
                     .append("dm", new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date))
-                    .append("cl", new Document("id", "17589602")
-                                        .append("fio", "ХЛЕБНИКОВ ДМИТРИЙ РАДОМИРОВИЧ")
+                    .append("cl", new Document("id", confVars.ID_EKB)
+                                        .append("fio", confVars.LAST_NAME.toUpperCase() + " " +
+                                            confVars.FIRST_NAME.toUpperCase() + " " +
+                                            confVars.PATRONYMIC.toUpperCase())
                                         .append("inn", "2181618276"))
                     .append("st", "NEW")
                     .append("ld", ldap.toUpperCase())
@@ -86,6 +88,56 @@ public enum MongoDB {
                     .append("dt", "<b>уникальное слово - нотрдам</b><br>")
                     .append("ext", new Document("dt", "LINUX")
                                         .append("de", "CLTMNG53121102511066625jIKKff"));
+
+        collection.insertOne(doc);
+    }
+
+    @Step("Добавить заявку юрлица '{claimName}' с референсом {ref} в БД")
+    public void addJurUnfinishedClaims(long ref, String ids, String claimName, String date, String ldap, String claimUrl)
+        throws ParseException {
+        MongoDatabase database = mongoClient.getDatabase(dbName);
+        MongoCollection<Document> collection = database.getCollection("operation");
+
+        Document doc = new Document("_id", new Document("ref", Long.toString(ref))
+            .append("idp", claimName)
+            .append("ids", ids.toUpperCase()))
+            .append("dc", new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date))
+            .append("dm", new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date))
+            .append("cl", new Document("id", confVars.JUR_ID_EKB)
+                .append("fio", confVars.JUR_NAME)
+                .append("inn", confVars.JUR_INN))
+            .append("st", "NEW")
+            .append("ld", ldap.toUpperCase())
+            .append("br", "DNH0")
+            .append("url", new Document("v", claimUrl))
+            .append("dt", "<b>уникальное слово - нотрдам</b><br>")
+            .append("ext", new Document("dt", "LINUX")
+                .append("de", "CLTMNG53121102511066625jIKKff"));
+
+        collection.insertOne(doc);
+    }
+
+    @Step("Добавить заявку частного предприятия '{claimName}' с референсом {ref} в БД")
+    public void addPrivateEnterpriseUnfinishedClaims(long ref, String ids, String claimName, String date, String ldap, String claimUrl)
+        throws ParseException {
+        MongoDatabase database = mongoClient.getDatabase(dbName);
+        MongoCollection<Document> collection = database.getCollection("operation");
+
+        Document doc = new Document("_id", new Document("ref", Long.toString(ref))
+            .append("idp", claimName)
+            .append("ids", ids.toUpperCase()))
+            .append("dc", new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date))
+            .append("dm", new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date))
+            .append("cl", new Document("id", confVars.PRIVATE_ENTERPRISE_EKB_ID)
+                .append("fio", confVars.PRIVATE_ENTERPRISE_NAME)
+                .append("inn", confVars.PRIVATE_ENTERPRISE_INN))
+            .append("st", "NEW")
+            .append("ld", ldap.toUpperCase())
+            .append("br", "DNH0")
+            .append("url", new Document("v", claimUrl))
+            .append("dt", "<b>уникальное слово - нотрдам</b><br>")
+            .append("ext", new Document("dt", "LINUX")
+                .append("de", "CLTMNG53121102511066625jIKKff"));
 
         collection.insertOne(doc);
     }

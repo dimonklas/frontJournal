@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestRunnerFJ" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-27T11:12:34" hostname="lugovskoy" time="16.399">
+<testsuite name="TestRunnerFJ" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-11-06T14:34:16" hostname="lugovskoy" time="65.316">
   <properties/>
-  <testcase name="searchAllClaimsInOneDay" classname="TestRunnerFJ" time="3.535"/>
-  <testcase name="searchClaimsInFrontJournalByDetails" classname="TestRunnerFJ" time="4.371"/>
-  <testcase name="searchClaimsInFrontJournalByOperation" classname="TestRunnerFJ" time="1.041"/>
-  <testcase name="searchClaimsInFrontJournalByOperationAndState" classname="TestRunnerFJ" time="2.229"/>
-  <testcase name="searchClaimsInFrontJournalByReference" classname="TestRunnerFJ" time="0.989"/>
-  <testcase name="searchClaimsInSeveralDays" classname="TestRunnerFJ" time="1.148"/>
+  <testcase name="searchClaimsInFrontJournalByReference" classname="TestRunnerFJ" time="3.626"/>
+  <testcase name="searchClaimsInFrontJournalByDetails" classname="TestRunnerFJ" time="7.267"/>
+  <testcase name="searchClaimsInFrontJournalByOperation" classname="TestRunnerFJ" time="1.475"/>
+  <testcase name="searchClaimsInFrontJournalByOperationAndState" classname="TestRunnerFJ" time="1.905"/>
+  <testcase name="searchClaimsInSeveralDays" classname="TestRunnerFJ" time="1.912"/>
+  <testcase name="searchAllClaimsInOneDay" classname="TestRunnerFJ" time="1.779"/>
+  <testcase name="searchClaimsInFrontJournalByCardNumberPhys" classname="TestRunnerFJ" time="12.947"/>
+  <testcase name="searchClaimsInFrontJournalByIdEkbPhys" classname="TestRunnerFJ" time="2.53"/>
+  <testcase name="searchClaimsInFrontJournalByInnPhys" classname="TestRunnerFJ" time="2.891"/>
+  <testcase name="searchClaimsInFrontJournalByPhonePhys" classname="TestRunnerFJ" time="2.704"/>
+  <testcase name="searchClaimsInFrontJournalByDocSeriesAndNumberPhys" classname="TestRunnerFJ" time="5.601"/>
+  <testcase name="searchClaimsInFrontJournalByFioAndBirthdayPhys" classname="TestRunnerFJ" time="4.191"/>
+  <testcase name="searchClaimsInFrontJournalByCardNumberBelongPhys" classname="TestRunnerFJ" time="7.87"/>
+  <testcase name="searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumberBelongClient" classname="TestRunnerFJ" time="5.741"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[8714 [Test worker] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[10.56.0.53:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-8966 [Test worker] INFO org.mongodb.driver.cluster - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=10.56.0.53:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
-9047 [cluster-ClusterId{value='59f314a2a542e24bdaa97b09', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:42810}] to 10.56.0.53:27017
-9053 [cluster-ClusterId{value='59f314a2a542e24bdaa97b09', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=10.56.0.53:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 3]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=2183796}
-9113 [Test worker] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:42811}] to 10.56.0.53:27017
+  <system-err><![CDATA[15176 [Test worker] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[10.56.0.53:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15616 [Test worker] INFO org.mongodb.driver.cluster - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=10.56.0.53:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+15674 [cluster-ClusterId{value='5a0072e83b54b80dbc2b6ebb', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:213913}] to 10.56.0.53:27017
+15679 [cluster-ClusterId{value='5a0072e83b54b80dbc2b6ebb', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=10.56.0.53:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 3]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=2559938}
+15734 [Test worker] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:213914}] to 10.56.0.53:27017
 ]]></system-err>
 </testsuite>

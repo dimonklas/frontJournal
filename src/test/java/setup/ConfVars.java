@@ -37,12 +37,6 @@ public class ConfVars {
     public String BASE_URL = getProperty(configurationData, "baseUrl");
     public String FRONT_JOURNAL_URL = getProperty(configurationData, "frontJournalUrl");
 
-    public String POSTGRE_SERVER = getProperty(configurationData, "postgreServer");
-    public String POSTGRE_USERNAME = getProperty(configurationData, "postgreUsername");
-    public String POSTGRE_PASSWORD = getProperty(configurationData, "postgrePassword");
-    public String ORACLE_BASE_URL = getProperty(configurationData, "oracleTestDataBaseURL");
-    public String ORACLE_BASE_USER_LOGIN = getProperty(configurationData, "oracleTestDataBaseUserLogin");
-    public String ORACLE_BASE_USER_PASSWORD = getProperty(configurationData, "oracleTestDataBaseUserPassword");
     public String MONGO_IP = getProperty(configurationData, "mongoIP");
     public String MONGO_PORT = getProperty(configurationData, "mongoPort");
     public String MONGO_NAME = getProperty(configurationData, "mongoName");
@@ -52,6 +46,26 @@ public class ConfVars {
     /*********************************************** Тестовые данные **************************************************/
     public String OPER_LDAP = getProperty(testData, "operLdap");
     public String MODIFY_RECORD_URL = getProperty(testData, "modifyRecordUrl");
+    public String PHYS_CARD_NUMBER = getProperty(testData, "physCardNumber");
+    public String ID_EKB = getProperty(testData, "idEkb");
+    public String INN = getProperty(testData, "inn");
+    public String PHONE_NUMBER = getProperty(testData, "phoneNumber");
+    public String DOC_SERIES = getProperty(testData, "docSeries");
+    public String DOC_NUMBER = getProperty(testData, "docNumber");
+
+    public String LAST_NAME = getProperty(testData, "lastName");
+    public String FIRST_NAME = getProperty(testData, "firstName");
+    public String PATRONYMIC = getProperty(testData, "patronymic");
+    public String BIRTHDATE = getProperty(testData, "birthdate");
+    public String JUR_ID_EKB = getProperty(testData, "jurIdEkb");
+    public String JUR_NAME = getProperty(testData, "jurName");
+    public String JUR_INN = getProperty(testData, "jurInn");
+    public String JUR_OKPO = getProperty(testData, "jurOkpo");
+    public String PRIVATE_ENTERPRISE_CARD_NUMBER = getProperty(testData, "privateEnterpriseCardNumber");
+    public String PRIVATE_ENTERPRISE_EKB_ID = getProperty(testData, "privateEnterpriseEkbId");
+    public String PRIVATE_ENTERPRISE_NAME = getProperty(testData, "privateEnterpriseName");
+    public String PRIVATE_ENTERPRISE_INN = getProperty(testData, "privateEnterpriseInn");
+    public String PRIVATE_ENTERPRISE_PAYMENT_ACCOUNT = getProperty(testData, "privateEnterprisePaymentAccount");
 
     public static ConfVars getInstance() {
         return ConfVarsHolder.instance;
