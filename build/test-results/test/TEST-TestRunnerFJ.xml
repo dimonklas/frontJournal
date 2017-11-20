@@ -1,25 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestRunnerFJ" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-11-06T14:34:16" hostname="lugovskoy" time="65.316">
+<testsuite name="TestRunnerFJ" tests="21" skipped="20" failures="1" errors="0" timestamp="2017-11-09T13:46:20" hostname="lugovskoy" time="31.234">
   <properties/>
-  <testcase name="searchClaimsInFrontJournalByReference" classname="TestRunnerFJ" time="3.626"/>
-  <testcase name="searchClaimsInFrontJournalByDetails" classname="TestRunnerFJ" time="7.267"/>
-  <testcase name="searchClaimsInFrontJournalByOperation" classname="TestRunnerFJ" time="1.475"/>
-  <testcase name="searchClaimsInFrontJournalByOperationAndState" classname="TestRunnerFJ" time="1.905"/>
-  <testcase name="searchClaimsInSeveralDays" classname="TestRunnerFJ" time="1.912"/>
-  <testcase name="searchAllClaimsInOneDay" classname="TestRunnerFJ" time="1.779"/>
-  <testcase name="searchClaimsInFrontJournalByCardNumberPhys" classname="TestRunnerFJ" time="12.947"/>
-  <testcase name="searchClaimsInFrontJournalByIdEkbPhys" classname="TestRunnerFJ" time="2.53"/>
-  <testcase name="searchClaimsInFrontJournalByInnPhys" classname="TestRunnerFJ" time="2.891"/>
-  <testcase name="searchClaimsInFrontJournalByPhonePhys" classname="TestRunnerFJ" time="2.704"/>
-  <testcase name="searchClaimsInFrontJournalByDocSeriesAndNumberPhys" classname="TestRunnerFJ" time="5.601"/>
-  <testcase name="searchClaimsInFrontJournalByFioAndBirthdayPhys" classname="TestRunnerFJ" time="4.191"/>
-  <testcase name="searchClaimsInFrontJournalByCardNumberBelongPhys" classname="TestRunnerFJ" time="7.87"/>
-  <testcase name="searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumberBelongClient" classname="TestRunnerFJ" time="5.741"/>
+  <testcase name="login" classname="TestRunnerFJ" time="29.903">
+    <failure message="Element not found {By.id: region}&#10;Expected: visible&#10;Screenshot: file:/home/lugovskoy/FrontJournal/build/reports/tests/1510235210315.0.png&#10;Page source: file:/home/lugovskoy/FrontJournal/build/reports/tests/1510235210315.0.html&#10;Timeout: 6 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;region&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {By.id: region}
+Expected: visible
+Screenshot: file:/home/lugovskoy/FrontJournal/build/reports/tests/1510235210315.0.png
+Page source: file:/home/lugovskoy/FrontJournal/build/reports/tests/1510235210315.0.html
+Timeout: 6 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;region&quot;}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:82)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:143)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:87)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:63)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pages.LoginPage.login(LoginPage.java:27)
+	at setup.SetupAndTeardown.login(SetupAndTeardown.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:129)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:88)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;region&quot;}
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.10.0-37-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'lugovskoy', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-37-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506092 (733a02544d189e..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 61.0.3163.79, webStorageEnabled: true}
+Session ID: 773f96c24cf7ea9482f0c298a5bd44c5
+*** Element info: {Using=id, value=region}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:56)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 58 more
+</failure>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByReference" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByDetails" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByOperation" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByOperationAndState" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInSeveralDays" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchAllClaimsInOneDay" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByCardNumberPhys" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByIdEkbPhys" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByInnPhys" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByPhonePhys" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByDocSeriesAndNumberPhys" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchClaimsInFrontJournalByFioAndBirthdayPhys" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchJurFaceClaimsInFrontJournalByCardNumber" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchJurFaceClaimsInFrontJournalByPhoneNumber" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchJurFaceClaimsInFrontJournalByIdEkb" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchJurFaceClaimsInFrontJournalByOkpo" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchPrivateEnterpriseClaimsInFrontJournalByInn" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchJurFaceClaimsInFrontJournalByFioAndBirthday" classname="TestRunnerFJ" time="0.0">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[15176 [Test worker] INFO org.mongodb.driver.cluster - Cluster created with settings {hosts=[10.56.0.53:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-15616 [Test worker] INFO org.mongodb.driver.cluster - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=10.56.0.53:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
-15674 [cluster-ClusterId{value='5a0072e83b54b80dbc2b6ebb', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:213913}] to 10.56.0.53:27017
-15679 [cluster-ClusterId{value='5a0072e83b54b80dbc2b6ebb', description='null'}-10.56.0.53:27017] INFO org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=10.56.0.53:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 3]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=2559938}
-15734 [Test worker] INFO org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:213914}] to 10.56.0.53:27017
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

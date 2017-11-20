@@ -27,8 +27,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
     enum OperationState {NEW, INWORK}
 
-    @Description("Поиск заявки по референсу")
-    @Test(groups = "FrontJournal", priority = 1)
+    @Test(groups = "FrontJournal", priority = 1, description = "Поиск по основным параметрам. Поиск заявки по референсу")
     public void searchClaimsInFrontJournalByReference() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
@@ -72,8 +71,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         frontJournal.waitingForSearchResults("0");
     }
 
-    @Description("Поиск заявки по деталям")
-    @Test(groups = "FrontJournal", priority = 10)
+    @Test(groups = "FrontJournal", priority = 10, description = "Поиск по основным параметрам. Поиск заявки по деталям")
     public void searchClaimsInFrontJournalByDetails() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
@@ -122,8 +120,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         assertThat(frontJournal.getClaimName()).isEqualTo(claimData.get("name"));
     }
 
-    @Description("Поиск заявки по операции")
-    @Test(groups = "FrontJournal", priority = 20)
+    @Test(groups = "FrontJournal", priority = 20, description = "Поиск по основным параметрам. Поиск заявки по операции")
     public void searchClaimsInFrontJournalByOperation() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
@@ -162,8 +159,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
 
     }
 
-    @Description("Поиск заявки по операции и состоянию")
-    @Test(groups = "FrontJournal", priority = 30)
+    @Test(groups = "FrontJournal", priority = 30, description = "Поиск по основным параметрам. Поиск заявки по операции и состоянию")
     public void searchClaimsInFrontJournalByOperationAndState() throws Exception {
 
         MongoDB.INSTANCE.deleteClaimsOlderDate(confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
@@ -210,8 +206,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         frontJournal.waitingForSearchResults("0");
     }
 
-    @Description("Поиск заявок за несколько дней")
-    @Test(groups = "FrontJournal", priority = 40)
+    @Test(groups = "FrontJournal", priority = 40, description = "Поиск по основным параметрам. Поиск заявок за несколько дней")
     public void searchClaimsInSeveralDays() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -260,8 +255,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск всех заявок за один день")
-    @Test(groups = "FrontJournal", priority = 50)
+    @Test(groups = "FrontJournal", priority = 50, description = "Поиск по основным параметрам. Поиск всех заявок за один день")
     public void searchAllClaimsInOneDay() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -310,8 +304,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок физлица по номеру карты")
-    @Test(groups = "FrontJournalPhys", priority = 60)
+    @Test(groups = "FrontJournalPhys", priority = 60, description = "Физлицо. Поиск заявок по номеру карты")
     public void searchClaimsInFrontJournalByCardNumberPhys() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -410,8 +403,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок физлица по ID в ЕКБ")
-    @Test(groups = "FrontJournal", priority = 70)
+    @Test(groups = "FrontJournal", priority = 70, description = "Физлицо. Поиск заявок по ID в ЕКБ")
     public void searchClaimsInFrontJournalByIdEkbPhys() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -470,8 +462,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок физлица по ИНН")
-    @Test(groups = "FrontJournal", priority = 80)
+    @Test(groups = "FrontJournal", priority = 80, description = "Физлицо. Поиск заявок по ИНН")
     public void searchClaimsInFrontJournalByInnPhys() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -530,8 +521,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок физлица по номеру телефона")
-    @Test(groups = "FrontJournal", priority = 90)
+    @Test(groups = "FrontJournal", priority = 90, description = "Физлицо. Поиск заявок по номеру телефона")
     public void searchClaimsInFrontJournalByPhonePhys() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -588,8 +578,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок физлица по серии и номеру документа")
-    @Test(groups = "FrontJournal", priority = 100)
+    @Test(groups = "FrontJournal", priority = 100, description = "Физлицо. Поиск заявок по серии и номеру документа")
     public void searchClaimsInFrontJournalByDocSeriesAndNumberPhys() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -694,8 +683,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок физлица по ФИО и ДР")
-    @Test(groups = "FrontJournal", priority = 110)
+    @Test(groups = "FrontJournal", priority = 110, description = "Физлицо. Поиск заявок по ФИО и ДР")
     public void searchClaimsInFrontJournalByFioAndBirthdayPhys() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -759,8 +747,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок юрлица по полному номеру карты")
-    @Test(groups = "FrontJournal", priority = 120)
+    @Test(groups = "FrontJournal", priority = 120, description = "Юрлицо. Поиск заявок по полному номеру карты")
     public void searchJurFaceClaimsInFrontJournalByCardNumber() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -820,8 +807,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок ЧП по 8 последним цифрам номера карты")
-    @Test(groups = "FrontJournal", priority = 130)
+    @Test(groups = "FrontJournal", priority = 130, description = "Юрлицо. Поиск заявок ЧП по 8 последним цифрам номера карты")
     public void searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -881,8 +867,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок юрлица по номеру телефона")
-    @Test(groups = "FrontJournal", priority = 140)
+    @Test(groups = "FrontJournal", priority = 140, description = "Юрлицо. Поиск заявок по номеру телефона")
     public void searchJurFaceClaimsInFrontJournalByPhoneNumber() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -940,8 +925,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок юрлица по ЕКБ ID")
-    @Test(groups = "FrontJournal", priority = 150)
+    @Test(groups = "FrontJournal", priority = 150, description = "Юрлицо. Поиск заявок по ЕКБ ID")
     public void searchJurFaceClaimsInFrontJournalByIdEkb() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -1001,8 +985,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок юрлица по ОКПО")
-    @Test(groups = "FrontJournal", priority = 160)
+    @Test(groups = "FrontJournal", priority = 160, description = "Юрлицо. Поиск заявок по ОКПО")
     public void searchJurFaceClaimsInFrontJournalByOkpo() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -1062,8 +1045,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок ЧП по ИНН")
-    @Test(groups = "FrontJournal", priority = 170)
+    @Test(groups = "FrontJournal", priority = 170, description = "Юрлицо. Поиск заявок ЧП по ИНН")
     public void searchPrivateEnterpriseClaimsInFrontJournalByInn() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -1123,8 +1105,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок юрлица по расчетному счету")
-    @Test(groups = "FrontJournal", priority = 180)
+    @Test(groups = "FrontJournal", priority = 180, description = "Юрлицо. Поиск заявок по расчетному счету")
     public void searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
@@ -1184,8 +1165,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         }
     }
 
-    @Description("Поиск заявок юрлица по ФИО и ДР")
-    @Test(groups = "FrontJournal", priority = 190)
+    @Test(groups = "FrontJournal", priority = 190, description = "Юрлицо. Поиск заявок по ФИО и ДР")
     public void searchJurFaceClaimsInFrontJournalByFioAndBirthday() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(
             confVars.OPER_LDAP, utils.changeCurrentDate("yyyy-MM-dd", 5, -8)
