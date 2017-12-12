@@ -22,7 +22,11 @@ public class RestUtils {
                     "<dm>" + date + "</dm>" +
                     "<det>&lt;b&gt;уникальное слово - нотрдамиус&lt;/b&gt;&lt;br\\></det>" +
                     "<clid>17589602</clid>" +
-                    "<fio>ХЛЕБНИКОВ ДМИТРИЙ РАДОМИРОВИЧ</fio>" +
+                    "<fio>" +
+                    confVars.LAST_NAME.toUpperCase() + " " +
+                    confVars.FIRST_NAME.toUpperCase() + " " +
+                    confVars.PATRONYMIC.toUpperCase() +
+                    "</fio>" +
                     "<inn>2181618276</inn>" +
                     "<st>NEW</st>" +
                     "<pfin>y</pfin>" +

@@ -6,17 +6,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/pages/FrontJournalPage.class" afterPath="$PROJECT_DIR$/build/classes/test/pages/FrontJournalPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/TestRunnerFJ.class" afterPath="$PROJECT_DIR$/build/classes/test/TestRunnerFJ.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/rest/RestUtils.class" afterPath="$PROJECT_DIR$/build/classes/test/rest/RestUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TestRunnerFJ.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TestRunnerFJ.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/test/testdata/config.properties" afterPath="$PROJECT_DIR$/build/resources/test/testdata/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TestRunnerFJ.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TestRunnerFJ.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestRunnerFJ.java" afterPath="$PROJECT_DIR$/src/test/java/TestRunnerFJ.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/test/testdata/testData.properties" afterPath="$PROJECT_DIR$/build/resources/test/testdata/testData.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rest/RestUtils.java" afterPath="$PROJECT_DIR$/src/test/java/rest/RestUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testdata/testData.properties" afterPath="$PROJECT_DIR$/src/test/resources/testdata/testData.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,6 +38,16 @@
         </task>
         <projects_view>
           <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="FrontJournal" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
             <PATH>
               <PATH_ELEMENT>
                 <option name="myItemId" value="" />
@@ -92,16 +98,6 @@
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
               </PATH_ELEMENT>
             </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="FrontJournal" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
           </tree_state>
         </projects_view>
       </state>
@@ -109,11 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestRunnerFJ.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRunnerFJ.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="404" column="0" lean-forward="true" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
               <folding>
                 <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -140,12 +136,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RestUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rest/RestUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testData.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/testData.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SetupAndTeardown.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="80">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,8 +171,28 @@
       <file leaf-file-name="ConfVars.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/setup/ConfVars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
+            <state relative-caret-position="899">
               <caret line="67" column="109" lean-forward="false" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoDB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/database/MongoDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="834">
+              <caret line="68" column="20" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -163,28 +201,18 @@
       <file leaf-file-name="FrontJournalPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
+            <state relative-caret-position="539">
               <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="20">
+              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -206,6 +234,7 @@
       <find>//td/span[text()='</find>
       <find>searchClaimsInFrontJournalByFioAndBirthdayPhys</find>
       <find>testng-failed.xml</find>
+      <find>Поиск по основным параметрам. Поиск заявки по деталям</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -527,7 +556,6 @@
         <option value="$PROJECT_DIR$/src/test/java/setup/TestRunnerFJ.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/testng2.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/rest/RestUtils.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/TestTest.java" />
@@ -536,11 +564,12 @@
         <option value="$PROJECT_DIR$/src/test/java/database/MongoDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java" />
         <option value="$PROJECT_DIR$/src/test/java/setup/ConfVars.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testdata/testData.properties" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunnerFJ.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testdata/testData.properties" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/java/rest/RestUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
       </list>
     </option>
   </component>
@@ -571,8 +600,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -602,6 +630,14 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -625,9 +661,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontJournal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontJournal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="setup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontJournal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontJournal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontJournal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontJournal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taskArtifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -635,7 +746,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WorkDesktopWithAllure" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
   </component>
   <component name="RecentsManager">
@@ -671,7 +782,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.FrontJournal [build test]">
+  <component name="RunManager" selected="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByDetails">
+    <configuration default="false" name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByOkpo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FrontJournal_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
+      <option name="METHOD_NAME" value="searchJurFaceClaimsInFrontJournalByOkpo" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration default="false" name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FrontJournal_test" />
@@ -756,7 +895,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FrontJournal_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -764,7 +903,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
-      <option name="METHOD_NAME" value="searchClaimsInFrontJournalByFioAndBirthdayPhys" />
+      <option name="METHOD_NAME" value="searchClaimsInFrontJournalByDetails" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -782,25 +921,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="FrontJournal [build test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1008,19 +1128,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.FrontJournal [build test]" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByOkpo" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByDetails" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.FrontJournal [build test]" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByDetails" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByOkpo" />
       </list>
     </recent_temporary>
   </component>
@@ -1038,34 +1158,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FrontJournal_[build_test] - 2017.11.09 at 15h 46m 58s.xml">
-      <configuration name="FrontJournal [build test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.12 at 15h 20m 59s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 10h 01m 39s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.12 at 15h 21m 54s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 10h 09m 29s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByCardNumber - 2017.12.12 at 14h 53m 40s.xml">
+      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByCardNumber" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 10h 09m 48s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByFioAndBirthday - 2017.12.12 at 15h 01m 37s.xml">
+      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 11h 48m 40s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByIdEkb - 2017.12.12 at 14h 55m 46s.xml">
+      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByIdEkb" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByFioAndBirthdayPhys - 2017.11.09 at 12h 06m 42s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByFioAndBirthdayPhys" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByOkpo - 2017.12.12 at 15h 00m 33s.xml">
+      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByOkpo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByInn - 2017.11.07 at 14h 49m 36s.xml">
+    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByPhoneNumber - 2017.12.12 at 14h 54m 21s.xml">
+      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByPhoneNumber" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByInn - 2017.12.12 at 15h 00m 51s.xml">
       <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByInn - 2017.11.07 at 14h 50m 27s.xml">
-      <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber - 2017.12.12 at 14h 53m 59s.xml">
+      <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount - 2017.11.07 at 15h 12m 38s.xml">
-      <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount - 2017.11.08 at 09h 09m 14s.xml">
+    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount - 2017.12.12 at 15h 01m 10s.xml">
       <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1076,19 +1196,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27750137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07296849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29076838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07296849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1099,7 +1220,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1129,7 +1249,7 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="47" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1205,7 +1325,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1287,7 +1409,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1380,13 +1504,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/database/OracleDataBase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/database/PostgreRequests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/database/PostgreDataBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/listeners/AllureListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-711">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1434,14 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rest/RestUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1454,17 +1563,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/database/MongoDB.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2060">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="104">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/testData.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="80">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/listeners/AllureListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/database/MongoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="68" column="20" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1472,53 +1601,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/setup/ConfVars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="899">
           <caret line="67" column="109" lean-forward="false" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="109" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/testData.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/test/java/rest/RestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="160">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="404" column="0" lean-forward="true" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
           <folding>
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1541,6 +1655,22 @@
             <element signature="method#searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchJurFaceClaimsInFrontJournalByFioAndBirthday#0;class#TestRunnerFJ#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
