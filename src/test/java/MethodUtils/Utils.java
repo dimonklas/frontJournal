@@ -51,9 +51,10 @@ public class Utils {
     }
 
     public String changeDateFormat(String date, String startFormat, String endFormat) throws ParseException {
+        Locale locale = new Locale("ru");
         SimpleDateFormat format = new SimpleDateFormat(startFormat);
         Date verifiableDate = format.parse(date);
-        SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat, Locale.getDefault());
+        SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat, locale);
         return dateFormat.format(verifiableDate);
     }
 
