@@ -89,7 +89,7 @@ public class FrontJournalPage {
 
     @Step("Дождаться изменения количества отображаемых заявок")
     public void waitingForSearchResults(String text) {
-        $(findedOperationsText).shouldHave(Condition.text(text));
+        $(findedOperationsText).waitUntil(Condition.text(text), 15000);
     }
 
     @Step("Получить дату заявки")

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce3eb77b-324b-48dc-b875-db3862449750" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" afterPath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -99,10 +100,9 @@
       <file leaf-file-name="TestRunnerFJ.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="136">
               <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByOperation#0;class#TestRunnerFJ#0" expanded="false" />
@@ -128,48 +128,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rest/RestUtils.java">
+      <file leaf-file-name="FrontJournalPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="253">
+              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="e#4917#4918#0" expanded="true" />
+                <element signature="e#4995#4996#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testData.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/testData.properties">
+      <file leaf-file-name="SelenideElement.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/4.8/93ec32e9e5b18e40a1735b63132d404e06b232e/selenide-4.8-sources.jar!/com/codeborne/selenide/SelenideElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="-938">
+              <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SetupAndTeardown.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfVars.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/setup/ConfVars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="67" column="109" lean-forward="false" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="109" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#3790#3791#0" expanded="false" />
-                <element signature="e#3836#3837#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,115 +154,8 @@
       <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-              <folding>
-                <element signature="e#1314#1315#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpectedConditions.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.7.0/ce5028603bb9f3d3a6666b803c90dd91ba7e92b5/selenium-support-3.7.0-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrontJournalPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#4338#4339#0" expanded="false" />
-                <element signature="e#4384#4385#0" expanded="false" />
-                <element signature="e#4480#4481#0" expanded="false" />
-                <element signature="e#4526#4527#0" expanded="false" />
-                <element signature="e#4633#4634#0" expanded="false" />
-                <element signature="e#4681#4682#0" expanded="false" />
-                <element signature="e#4758#4759#0" expanded="false" />
-                <element signature="e#4797#4798#0" expanded="false" />
-                <element signature="e#4917#4918#0" expanded="false" />
-                <element signature="e#4989#4990#0" expanded="false" />
-                <element signature="e#6835#6836#0" expanded="false" />
-                <element signature="e#6877#6878#0" expanded="false" />
-                <element signature="e#8309#8310#0" expanded="false" />
-                <element signature="e#8359#8360#0" expanded="false" />
-                <element signature="e#8462#8463#0" expanded="false" />
-                <element signature="e#8512#8513#0" expanded="false" />
-                <element signature="e#8621#8622#0" expanded="false" />
-                <element signature="e#8676#8677#0" expanded="false" />
-                <element signature="e#8796#8797#0" expanded="false" />
-                <element signature="e#8850#8851#0" expanded="false" />
-                <element signature="e#8950#8951#0" expanded="false" />
-                <element signature="e#9000#9001#0" expanded="false" />
-                <element signature="e#9111#9112#0" expanded="false" />
-                <element signature="e#9160#9161#0" expanded="false" />
-                <element signature="e#9253#9254#0" expanded="false" />
-                <element signature="e#9301#9302#0" expanded="false" />
-                <element signature="e#9404#9405#0" expanded="false" />
-                <element signature="e#9455#9456#0" expanded="false" />
-                <element signature="e#9567#9568#0" expanded="false" />
-                <element signature="e#9625#9626#0" expanded="false" />
-                <element signature="e#9739#9740#0" expanded="false" />
-                <element signature="e#9802#9803#0" expanded="false" />
-                <element signature="e#9911#9912#0" expanded="false" />
-                <element signature="e#9970#9971#0" expanded="false" />
-                <element signature="e#10089#10090#0" expanded="false" />
-                <element signature="e#10147#10148#0" expanded="false" />
-                <element signature="e#10250#10251#0" expanded="false" />
-                <element signature="e#10295#10296#0" expanded="false" />
-                <element signature="e#10406#10407#0" expanded="false" />
-                <element signature="e#10455#10456#0" expanded="false" />
-                <element signature="e#10557#10558#0" expanded="false" />
-                <element signature="e#10601#10602#0" expanded="false" />
-                <element signature="e#10696#10697#0" expanded="false" />
-                <element signature="e#10738#10739#0" expanded="false" />
-                <element signature="e#10847#10848#0" expanded="false" />
-                <element signature="e#10891#10892#0" expanded="false" />
-                <element signature="e#11004#11005#0" expanded="false" />
-                <element signature="e#11052#11053#0" expanded="false" />
-                <element signature="e#11166#11167#0" expanded="false" />
-                <element signature="e#11214#11215#0" expanded="false" />
-                <element signature="e#11318#11319#0" expanded="false" />
-                <element signature="e#11365#11366#0" expanded="false" />
-                <element signature="e#11468#11469#0" expanded="false" />
-                <element signature="e#11516#11517#0" expanded="false" />
-                <element signature="e#11623#11624#0" expanded="false" />
-                <element signature="e#11672#11673#0" expanded="false" />
-                <element signature="e#11787#11788#0" expanded="false" />
-                <element signature="e#11840#11841#0" expanded="false" />
-                <element signature="e#11924#11925#0" expanded="false" />
-                <element signature="e#11965#11966#0" expanded="false" />
-                <element signature="e#12088#12089#0" expanded="false" />
-                <element signature="e#12137#12138#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="0">
+              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -636,12 +506,12 @@
         <option value="$PROJECT_DIR$/src/test/java/database/MongoDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java" />
         <option value="$PROJECT_DIR$/src/test/java/setup/ConfVars.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunnerFJ.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testdata/testData.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/rest/RestUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
       </list>
     </option>
@@ -855,8 +725,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.FrontJournal [clean]">
-    <configuration default="false" name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys">
+    <configuration default="false" name="TestRunnerFJ.searchClaimsInFrontJournalByOperation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FrontJournal_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -864,7 +734,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
-      <option name="METHOD_NAME" value="searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
+      <option name="METHOD_NAME" value="searchClaimsInFrontJournalByOperation" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -884,7 +754,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestRunnerFJ.searchClaimsInFrontJournalByOperationAndState" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FrontJournal_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -892,7 +762,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
-      <option name="METHOD_NAME" value="searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
+      <option name="METHOD_NAME" value="searchClaimsInFrontJournalByOperationAndState" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -912,7 +782,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestRunnerFJ.searchClaimsInSeveralDays" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FrontJournal_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -920,7 +790,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
-      <option name="METHOD_NAME" value="searchClaimsInFrontJournalByDetails" />
+      <option name="METHOD_NAME" value="searchClaimsInSeveralDays" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -940,41 +810,60 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="FrontJournal [build clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+    <configuration default="false" name="TestRunnerFJ.searchAllClaimsInOneDay" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FrontJournal_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
+      <option name="METHOD_NAME" value="searchAllClaimsInOneDay" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="FrontJournal [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
+    <configuration default="false" name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FrontJournal_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunnerFJ" />
+      <option name="METHOD_NAME" value="searchClaimsInFrontJournalByCardNumberPhys" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1182,19 +1071,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByDetails" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.FrontJournal [build clean]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.FrontJournal [clean]" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByOperation" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByOperationAndState" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInSeveralDays" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchAllClaimsInOneDay" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.FrontJournal [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.FrontJournal [build clean]" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByDetails" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchAllClaimsInOneDay" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInSeveralDays" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByOperationAndState" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TestRunnerFJ.searchClaimsInFrontJournalByOperation" />
       </list>
     </recent_temporary>
   </component>
@@ -1212,35 +1101,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.12 at 15h 20m 59s.xml">
+    <history-entry file="TestRunnerFJ_searchAllClaimsInOneDay - 2017.12.27 at 12h 04m 49s.xml">
+      <configuration name="TestRunnerFJ.searchAllClaimsInOneDay" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 05m 09s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 10h 52m 44s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.12 at 15h 21m 54s.xml">
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 11h 51m 42s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByCardNumber - 2017.12.12 at 14h 53m 40s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByCardNumber" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 11h 52m 28s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByFioAndBirthday - 2017.12.12 at 15h 01m 37s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByFioAndBirthday" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 11h 54m 05s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByIdEkb - 2017.12.12 at 14h 55m 46s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByIdEkb" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 12h 03m 21s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByOkpo - 2017.12.12 at 15h 00m 33s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByOkpo" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByOperation - 2017.12.27 at 12h 03m 56s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByOperation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchJurFaceClaimsInFrontJournalByPhoneNumber - 2017.12.12 at 14h 54m 21s.xml">
-      <configuration name="TestRunnerFJ.searchJurFaceClaimsInFrontJournalByPhoneNumber" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByOperationAndState - 2017.12.27 at 12h 04m 11s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByOperationAndState" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByInn - 2017.12.12 at 15h 00m 51s.xml">
-      <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByInn" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber - 2017.12.12 at 14h 53m 59s.xml">
-      <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunnerFJ_searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount - 2017.12.12 at 15h 01m 10s.xml">
-      <configuration name="TestRunnerFJ.searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInSeveralDays - 2017.12.27 at 12h 04m 32s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInSeveralDays" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1250,12 +1139,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1273,7 +1163,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1303,7 +1192,7 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="58" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1316,36 +1205,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17040">
-          <caret line="852" column="53" lean-forward="true" selection-start-line="852" selection-start-column="53" selection-end-line="852" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByOperation#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByOperationAndState#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInSeveralDays#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchAllClaimsInOneDay#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByCardNumberPhys#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByIdEkbPhys#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByInnPhys#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByPhonePhys#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByDocSeriesAndNumberPhys#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByFioAndBirthdayPhys#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchJurFaceClaimsInFrontJournalByCardNumber#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchPrivateEnterpriseClaimsInFrontJournalByNotFullCardNumber#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchJurFaceClaimsInFrontJournalByPhoneNumber#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchJurFaceClaimsInFrontJournalByIdEkb#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchJurFaceClaimsInFrontJournalByOkpo#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchPrivateEnterpriseClaimsInFrontJournalByInn#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchJurFaceClaimsInFrontJournalByFioAndBirthday#0;class#TestRunnerFJ#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rest/RestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1389,11 +1248,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3790#3791#0" expanded="false" />
-            <element signature="e#3836#3837#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1402,69 +1257,8 @@
         <state relative-caret-position="3340">
           <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4338#4339#0" expanded="false" />
-            <element signature="e#4384#4385#0" expanded="false" />
-            <element signature="e#4480#4481#0" expanded="false" />
-            <element signature="e#4526#4527#0" expanded="false" />
-            <element signature="e#4633#4634#0" expanded="false" />
-            <element signature="e#4681#4682#0" expanded="false" />
-            <element signature="e#4758#4759#0" expanded="false" />
-            <element signature="e#4797#4798#0" expanded="false" />
-            <element signature="e#4917#4918#0" expanded="false" />
-            <element signature="e#4989#4990#0" expanded="false" />
-            <element signature="e#6835#6836#0" expanded="false" />
-            <element signature="e#6877#6878#0" expanded="false" />
-            <element signature="e#8309#8310#0" expanded="false" />
-            <element signature="e#8359#8360#0" expanded="false" />
-            <element signature="e#8462#8463#0" expanded="false" />
-            <element signature="e#8512#8513#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8676#8677#0" expanded="false" />
-            <element signature="e#8796#8797#0" expanded="false" />
-            <element signature="e#8850#8851#0" expanded="false" />
-            <element signature="e#8950#8951#0" expanded="false" />
-            <element signature="e#9000#9001#0" expanded="false" />
-            <element signature="e#9111#9112#0" expanded="false" />
-            <element signature="e#9160#9161#0" expanded="false" />
-            <element signature="e#9253#9254#0" expanded="false" />
-            <element signature="e#9301#9302#0" expanded="false" />
-            <element signature="e#9404#9405#0" expanded="false" />
-            <element signature="e#9455#9456#0" expanded="false" />
-            <element signature="e#9567#9568#0" expanded="false" />
-            <element signature="e#9625#9626#0" expanded="false" />
-            <element signature="e#9739#9740#0" expanded="false" />
-            <element signature="e#9802#9803#0" expanded="false" />
-            <element signature="e#9911#9912#0" expanded="false" />
-            <element signature="e#9970#9971#0" expanded="false" />
-            <element signature="e#10089#10090#0" expanded="false" />
-            <element signature="e#10147#10148#0" expanded="false" />
-            <element signature="e#10250#10251#0" expanded="false" />
-            <element signature="e#10295#10296#0" expanded="false" />
-            <element signature="e#10406#10407#0" expanded="false" />
-            <element signature="e#10455#10456#0" expanded="false" />
-            <element signature="e#10557#10558#0" expanded="false" />
-            <element signature="e#10601#10602#0" expanded="false" />
-            <element signature="e#10696#10697#0" expanded="false" />
-            <element signature="e#10738#10739#0" expanded="false" />
-            <element signature="e#10847#10848#0" expanded="false" />
-            <element signature="e#10891#10892#0" expanded="false" />
-            <element signature="e#11004#11005#0" expanded="false" />
-            <element signature="e#11052#11053#0" expanded="false" />
-            <element signature="e#11166#11167#0" expanded="false" />
-            <element signature="e#11214#11215#0" expanded="false" />
-            <element signature="e#11318#11319#0" expanded="false" />
-            <element signature="e#11365#11366#0" expanded="false" />
-            <element signature="e#11468#11469#0" expanded="false" />
-            <element signature="e#11516#11517#0" expanded="false" />
-            <element signature="e#11623#11624#0" expanded="false" />
-            <element signature="e#11672#11673#0" expanded="false" />
-            <element signature="e#11787#11788#0" expanded="false" />
-            <element signature="e#11840#11841#0" expanded="false" />
-            <element signature="e#11924#11925#0" expanded="false" />
-            <element signature="e#11965#11966#0" expanded="false" />
-            <element signature="e#12088#12089#0" expanded="false" />
-            <element signature="e#12137#12138#0" expanded="false" />
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1474,7 +1268,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByOperation#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1534,11 +1327,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3790#3791#0" expanded="false" />
-            <element signature="e#3836#3837#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,69 +1336,8 @@
         <state relative-caret-position="3380">
           <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4338#4339#0" expanded="false" />
-            <element signature="e#4384#4385#0" expanded="false" />
-            <element signature="e#4480#4481#0" expanded="false" />
-            <element signature="e#4526#4527#0" expanded="false" />
-            <element signature="e#4633#4634#0" expanded="false" />
-            <element signature="e#4681#4682#0" expanded="false" />
-            <element signature="e#4758#4759#0" expanded="false" />
-            <element signature="e#4797#4798#0" expanded="false" />
-            <element signature="e#4917#4918#0" expanded="false" />
-            <element signature="e#4989#4990#0" expanded="false" />
-            <element signature="e#6835#6836#0" expanded="false" />
-            <element signature="e#6877#6878#0" expanded="false" />
-            <element signature="e#8309#8310#0" expanded="false" />
-            <element signature="e#8359#8360#0" expanded="false" />
-            <element signature="e#8462#8463#0" expanded="false" />
-            <element signature="e#8512#8513#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8676#8677#0" expanded="false" />
-            <element signature="e#8796#8797#0" expanded="false" />
-            <element signature="e#8850#8851#0" expanded="false" />
-            <element signature="e#8950#8951#0" expanded="false" />
-            <element signature="e#9000#9001#0" expanded="false" />
-            <element signature="e#9111#9112#0" expanded="false" />
-            <element signature="e#9160#9161#0" expanded="false" />
-            <element signature="e#9253#9254#0" expanded="false" />
-            <element signature="e#9301#9302#0" expanded="false" />
-            <element signature="e#9404#9405#0" expanded="false" />
-            <element signature="e#9455#9456#0" expanded="false" />
-            <element signature="e#9567#9568#0" expanded="false" />
-            <element signature="e#9625#9626#0" expanded="false" />
-            <element signature="e#9739#9740#0" expanded="false" />
-            <element signature="e#9802#9803#0" expanded="false" />
-            <element signature="e#9911#9912#0" expanded="false" />
-            <element signature="e#9970#9971#0" expanded="false" />
-            <element signature="e#10089#10090#0" expanded="false" />
-            <element signature="e#10147#10148#0" expanded="false" />
-            <element signature="e#10250#10251#0" expanded="false" />
-            <element signature="e#10295#10296#0" expanded="false" />
-            <element signature="e#10406#10407#0" expanded="false" />
-            <element signature="e#10455#10456#0" expanded="false" />
-            <element signature="e#10557#10558#0" expanded="false" />
-            <element signature="e#10601#10602#0" expanded="false" />
-            <element signature="e#10696#10697#0" expanded="false" />
-            <element signature="e#10738#10739#0" expanded="false" />
-            <element signature="e#10847#10848#0" expanded="false" />
-            <element signature="e#10891#10892#0" expanded="false" />
-            <element signature="e#11004#11005#0" expanded="false" />
-            <element signature="e#11052#11053#0" expanded="false" />
-            <element signature="e#11166#11167#0" expanded="false" />
-            <element signature="e#11214#11215#0" expanded="false" />
-            <element signature="e#11318#11319#0" expanded="false" />
-            <element signature="e#11365#11366#0" expanded="false" />
-            <element signature="e#11468#11469#0" expanded="false" />
-            <element signature="e#11516#11517#0" expanded="false" />
-            <element signature="e#11623#11624#0" expanded="false" />
-            <element signature="e#11672#11673#0" expanded="false" />
-            <element signature="e#11787#11788#0" expanded="false" />
-            <element signature="e#11840#11841#0" expanded="false" />
-            <element signature="e#11924#11925#0" expanded="false" />
-            <element signature="e#11965#11966#0" expanded="false" />
-            <element signature="e#12088#12089#0" expanded="false" />
-            <element signature="e#12137#12138#0" expanded="false" />
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1619,7 +1347,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByOperation#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1655,11 +1382,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3790#3791#0" expanded="false" />
-            <element signature="e#3836#3837#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1668,69 +1391,8 @@
         <state relative-caret-position="880">
           <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4338#4339#0" expanded="false" />
-            <element signature="e#4384#4385#0" expanded="false" />
-            <element signature="e#4480#4481#0" expanded="false" />
-            <element signature="e#4526#4527#0" expanded="false" />
-            <element signature="e#4633#4634#0" expanded="false" />
-            <element signature="e#4681#4682#0" expanded="false" />
-            <element signature="e#4758#4759#0" expanded="false" />
-            <element signature="e#4797#4798#0" expanded="false" />
-            <element signature="e#4917#4918#0" expanded="false" />
-            <element signature="e#4989#4990#0" expanded="false" />
-            <element signature="e#6835#6836#0" expanded="false" />
-            <element signature="e#6877#6878#0" expanded="false" />
-            <element signature="e#8309#8310#0" expanded="false" />
-            <element signature="e#8359#8360#0" expanded="false" />
-            <element signature="e#8462#8463#0" expanded="false" />
-            <element signature="e#8512#8513#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8676#8677#0" expanded="false" />
-            <element signature="e#8796#8797#0" expanded="false" />
-            <element signature="e#8850#8851#0" expanded="false" />
-            <element signature="e#8950#8951#0" expanded="false" />
-            <element signature="e#9000#9001#0" expanded="false" />
-            <element signature="e#9111#9112#0" expanded="false" />
-            <element signature="e#9160#9161#0" expanded="false" />
-            <element signature="e#9253#9254#0" expanded="false" />
-            <element signature="e#9301#9302#0" expanded="false" />
-            <element signature="e#9404#9405#0" expanded="false" />
-            <element signature="e#9455#9456#0" expanded="false" />
-            <element signature="e#9567#9568#0" expanded="false" />
-            <element signature="e#9625#9626#0" expanded="false" />
-            <element signature="e#9739#9740#0" expanded="false" />
-            <element signature="e#9802#9803#0" expanded="false" />
-            <element signature="e#9911#9912#0" expanded="false" />
-            <element signature="e#9970#9971#0" expanded="false" />
-            <element signature="e#10089#10090#0" expanded="false" />
-            <element signature="e#10147#10148#0" expanded="false" />
-            <element signature="e#10250#10251#0" expanded="false" />
-            <element signature="e#10295#10296#0" expanded="false" />
-            <element signature="e#10406#10407#0" expanded="false" />
-            <element signature="e#10455#10456#0" expanded="false" />
-            <element signature="e#10557#10558#0" expanded="false" />
-            <element signature="e#10601#10602#0" expanded="false" />
-            <element signature="e#10696#10697#0" expanded="false" />
-            <element signature="e#10738#10739#0" expanded="false" />
-            <element signature="e#10847#10848#0" expanded="false" />
-            <element signature="e#10891#10892#0" expanded="false" />
-            <element signature="e#11004#11005#0" expanded="false" />
-            <element signature="e#11052#11053#0" expanded="false" />
-            <element signature="e#11166#11167#0" expanded="false" />
-            <element signature="e#11214#11215#0" expanded="false" />
-            <element signature="e#11318#11319#0" expanded="false" />
-            <element signature="e#11365#11366#0" expanded="false" />
-            <element signature="e#11468#11469#0" expanded="false" />
-            <element signature="e#11516#11517#0" expanded="false" />
-            <element signature="e#11623#11624#0" expanded="false" />
-            <element signature="e#11672#11673#0" expanded="false" />
-            <element signature="e#11787#11788#0" expanded="false" />
-            <element signature="e#11840#11841#0" expanded="false" />
-            <element signature="e#11924#11925#0" expanded="false" />
-            <element signature="e#11965#11966#0" expanded="false" />
-            <element signature="e#12088#12089#0" expanded="false" />
-            <element signature="e#12137#12138#0" expanded="false" />
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1834,34 +1496,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.7.0/ce5028603bb9f3d3a6666b803c90dd91ba7e92b5/selenium-support-3.7.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="202" column="15" lean-forward="false" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.7.0/ce5028603bb9f3d3a6666b803c90dd91ba7e92b5/selenium-support-3.7.0-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="e#1314#1315#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/setup/ConfVars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="834">
           <caret line="67" column="109" lean-forward="false" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="109" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3790#3791#0" expanded="false" />
-            <element signature="e#3836#3837#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/testData.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rest/RestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="160">
           <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/4.8/93ec32e9e5b18e40a1735b63132d404e06b232e/selenide-4.8-sources.jar!/com/codeborne/selenide/SelenideElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="136">
           <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByOperation#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1886,125 +1603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4338#4339#0" expanded="false" />
-            <element signature="e#4384#4385#0" expanded="false" />
-            <element signature="e#4480#4481#0" expanded="false" />
-            <element signature="e#4526#4527#0" expanded="false" />
-            <element signature="e#4633#4634#0" expanded="false" />
-            <element signature="e#4681#4682#0" expanded="false" />
-            <element signature="e#4758#4759#0" expanded="false" />
-            <element signature="e#4797#4798#0" expanded="false" />
-            <element signature="e#4917#4918#0" expanded="false" />
-            <element signature="e#4989#4990#0" expanded="false" />
-            <element signature="e#6835#6836#0" expanded="false" />
-            <element signature="e#6877#6878#0" expanded="false" />
-            <element signature="e#8309#8310#0" expanded="false" />
-            <element signature="e#8359#8360#0" expanded="false" />
-            <element signature="e#8462#8463#0" expanded="false" />
-            <element signature="e#8512#8513#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8676#8677#0" expanded="false" />
-            <element signature="e#8796#8797#0" expanded="false" />
-            <element signature="e#8850#8851#0" expanded="false" />
-            <element signature="e#8950#8951#0" expanded="false" />
-            <element signature="e#9000#9001#0" expanded="false" />
-            <element signature="e#9111#9112#0" expanded="false" />
-            <element signature="e#9160#9161#0" expanded="false" />
-            <element signature="e#9253#9254#0" expanded="false" />
-            <element signature="e#9301#9302#0" expanded="false" />
-            <element signature="e#9404#9405#0" expanded="false" />
-            <element signature="e#9455#9456#0" expanded="false" />
-            <element signature="e#9567#9568#0" expanded="false" />
-            <element signature="e#9625#9626#0" expanded="false" />
-            <element signature="e#9739#9740#0" expanded="false" />
-            <element signature="e#9802#9803#0" expanded="false" />
-            <element signature="e#9911#9912#0" expanded="false" />
-            <element signature="e#9970#9971#0" expanded="false" />
-            <element signature="e#10089#10090#0" expanded="false" />
-            <element signature="e#10147#10148#0" expanded="false" />
-            <element signature="e#10250#10251#0" expanded="false" />
-            <element signature="e#10295#10296#0" expanded="false" />
-            <element signature="e#10406#10407#0" expanded="false" />
-            <element signature="e#10455#10456#0" expanded="false" />
-            <element signature="e#10557#10558#0" expanded="false" />
-            <element signature="e#10601#10602#0" expanded="false" />
-            <element signature="e#10696#10697#0" expanded="false" />
-            <element signature="e#10738#10739#0" expanded="false" />
-            <element signature="e#10847#10848#0" expanded="false" />
-            <element signature="e#10891#10892#0" expanded="false" />
-            <element signature="e#11004#11005#0" expanded="false" />
-            <element signature="e#11052#11053#0" expanded="false" />
-            <element signature="e#11166#11167#0" expanded="false" />
-            <element signature="e#11214#11215#0" expanded="false" />
-            <element signature="e#11318#11319#0" expanded="false" />
-            <element signature="e#11365#11366#0" expanded="false" />
-            <element signature="e#11468#11469#0" expanded="false" />
-            <element signature="e#11516#11517#0" expanded="false" />
-            <element signature="e#11623#11624#0" expanded="false" />
-            <element signature="e#11672#11673#0" expanded="false" />
-            <element signature="e#11787#11788#0" expanded="false" />
-            <element signature="e#11840#11841#0" expanded="false" />
-            <element signature="e#11924#11925#0" expanded="false" />
-            <element signature="e#11965#11966#0" expanded="false" />
-            <element signature="e#12088#12089#0" expanded="false" />
-            <element signature="e#12137#12138#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.7.0/ce5028603bb9f3d3a6666b803c90dd91ba7e92b5/selenium-support-3.7.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="202" column="15" lean-forward="false" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.7.0/ce5028603bb9f3d3a6666b803c90dd91ba7e92b5/selenium-support-3.7.0-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/testData.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/setup/SetupAndTeardown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
         </state>
       </provider>
