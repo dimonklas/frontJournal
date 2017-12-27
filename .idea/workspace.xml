@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce3eb77b-324b-48dc-b875-db3862449750" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java" afterPath="$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" afterPath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -98,8 +99,8 @@
       <file leaf-file-name="TestRunnerFJ.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="368" column="28" lean-forward="true" selection-start-line="368" selection-start-column="28" selection-end-line="368" selection-end-column="28" />
+            <state relative-caret-position="277">
+              <caret line="317" column="61" lean-forward="false" selection-start-line="317" selection-start-column="61" selection-end-line="317" selection-end-column="61" />
               <folding>
                 <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -128,8 +129,8 @@
       <file leaf-file-name="FrontJournalPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="167" column="41" lean-forward="true" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+            <state relative-caret-position="193">
+              <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
               <folding>
                 <element signature="e#4917#4918#0" expanded="true" />
                 <element signature="e#4995#4996#0" expanded="true" />
@@ -141,8 +142,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="56" column="78" lean-forward="true" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+            <state relative-caret-position="400">
+              <caret line="29" column="73" lean-forward="false" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -151,8 +152,8 @@
       <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="220">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -1098,9 +1099,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunnerFJ_searchAllClaimsInOneDay - 2017.12.27 at 12h 04m 49s.xml">
-      <configuration name="TestRunnerFJ.searchAllClaimsInOneDay" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 05m 09s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
@@ -1122,11 +1120,14 @@
     <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 41m 55s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByOperationAndState - 2017.12.27 at 12h 04m 11s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByOperationAndState" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 13h 40m 45s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInSeveralDays - 2017.12.27 at 12h 04m 32s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInSeveralDays" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 13h 41m 13s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 13h 44m 09s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1196,13 +1197,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java</url>
-          <line>56</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java</url>
-          <line>57</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
@@ -1571,8 +1572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="167" column="41" lean-forward="true" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+        <state relative-caret-position="193">
+          <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
           <folding>
             <element signature="e#4917#4918#0" expanded="true" />
             <element signature="e#4995#4996#0" expanded="true" />
@@ -1580,18 +1581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="56" column="78" lean-forward="true" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="368" column="28" lean-forward="true" selection-start-line="368" selection-start-column="28" selection-end-line="368" selection-end-column="28" />
+        <state relative-caret-position="277">
+          <caret line="317" column="61" lean-forward="false" selection-start-line="317" selection-start-column="61" selection-end-line="317" selection-end-column="61" />
           <folding>
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1616,10 +1609,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="29" column="73" lean-forward="false" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testdata/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="220">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>

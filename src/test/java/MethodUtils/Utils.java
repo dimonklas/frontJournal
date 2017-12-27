@@ -13,8 +13,9 @@ import java.util.regex.Pattern;
 
 public class Utils {
     public String getCurrentDate(String format) {
+        Locale locale = new Locale("ru");
         Calendar cal = Calendar.getInstance();
-        SimpleDateFormat formatDate = new SimpleDateFormat(format);
+        SimpleDateFormat formatDate = new SimpleDateFormat(format, locale);
         return formatDate.format(cal.getTime());
     }
 
@@ -23,14 +24,16 @@ public class Utils {
     }
 
     public static String changeCurrentDate(String format, int timeUnit, int count) {
+        Locale locale = new Locale("ru");
         Calendar cal = Calendar.getInstance();
         cal.add(timeUnit, count);
-        SimpleDateFormat formatDate = new SimpleDateFormat(format);
+        SimpleDateFormat formatDate = new SimpleDateFormat(format, locale);
         return formatDate.format(cal.getTime());
     }
 
     public static String changeDate(String date, String dateFormat, int param, int count) throws Exception {
-        SimpleDateFormat formatDate = new SimpleDateFormat(dateFormat);
+        Locale locale = new Locale("ru");
+        SimpleDateFormat formatDate = new SimpleDateFormat(dateFormat, locale);
         Date verifiableDate = formatDate.parse(date);
         Calendar cal = Calendar.getInstance();
         cal.setTime(verifiableDate);
@@ -59,8 +62,9 @@ public class Utils {
     }
 
     public String changeDateFormatFromTimestamp(String date, String endFormat) throws ParseException {
+        Locale locale = new Locale("ru");
         Date verifiableDate = new Date(Long.parseLong(date));
-        SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat);
+        SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat, locale);
         return dateFormat.format(verifiableDate);
     }
 }
