@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce3eb77b-324b-48dc-b875-db3862449750" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" afterPath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
-    </list>
+    <list default="true" id="ce3eb77b-324b-48dc-b875-db3862449750" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
