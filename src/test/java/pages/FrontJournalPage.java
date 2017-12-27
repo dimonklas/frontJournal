@@ -166,7 +166,7 @@ public class FrontJournalPage {
     private void selectDateInDatepicker(String date) throws Exception {
         String day = date.split("-")[0];
         String monthName = utils.changeDateFormat(date, "d-MM", "MMM").substring(0, 3);
-        System.out.print(monthName);
+
         Thread.sleep(1000);
         $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
             .shouldBe(Condition.visible).click();
