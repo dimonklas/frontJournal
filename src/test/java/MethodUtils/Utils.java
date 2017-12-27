@@ -53,7 +53,7 @@ public class Utils {
     public String changeDateFormat(String date, String startFormat, String endFormat) throws ParseException {
         SimpleDateFormat format = new SimpleDateFormat(startFormat);
         Date verifiableDate = format.parse(date);
-        SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat);
+        SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat, Locale.getDefault());
         return dateFormat.format(verifiableDate);
     }
 

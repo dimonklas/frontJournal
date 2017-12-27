@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce3eb77b-324b-48dc-b875-db3862449750" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" afterPath="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java" afterPath="$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -100,8 +98,8 @@
       <file leaf-file-name="TestRunnerFJ.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
+            <state relative-caret-position="217">
+              <caret line="368" column="26" lean-forward="false" selection-start-line="368" selection-start-column="26" selection-end-line="368" selection-end-column="26" />
               <folding>
                 <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -109,7 +107,6 @@
                 <element signature="method#searchClaimsInFrontJournalByOperationAndState#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInSeveralDays#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchAllClaimsInOneDay#0;class#TestRunnerFJ#0" expanded="false" />
-                <element signature="method#searchClaimsInFrontJournalByCardNumberPhys#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByIdEkbPhys#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByInnPhys#0;class#TestRunnerFJ#0" expanded="false" />
                 <element signature="method#searchClaimsInFrontJournalByPhonePhys#0;class#TestRunnerFJ#0" expanded="false" />
@@ -131,8 +128,8 @@
       <file leaf-file-name="FrontJournalPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding>
                 <element signature="e#4917#4918#0" expanded="true" />
                 <element signature="e#4995#4996#0" expanded="true" />
@@ -141,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelenideElement.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codeborne/selenide/4.8/93ec32e9e5b18e40a1735b63132d404e06b232e/selenide-4.8-sources.jar!/com/codeborne/selenide/SelenideElement.java">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-938">
-              <caret line="263" column="18" lean-forward="false" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+            <state relative-caret-position="182">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -493,7 +490,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/pages/OpenProductsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/database/OracleRequests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/setup/TestRunnerFJ.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -512,6 +508,7 @@
         <option value="$PROJECT_DIR$/src/test/java/rest/RestUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testdata/config.properties" />
       </list>
     </option>
@@ -520,7 +517,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="1985" />
     <option name="y" value="-4" />
     <option name="width" value="1855" />
     <option name="height" value="1084" />
@@ -1107,17 +1104,17 @@
     <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 05m 09s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 10h 52m 44s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 15m 20s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 11h 51m 42s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 16m 53s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 11h 52m 28s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 26m 38s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 11h 54m 05s.xml">
-      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
+    <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByCardNumberPhys - 2017.12.27 at 12h 27m 43s.xml">
+      <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByCardNumberPhys" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestRunnerFJ_searchClaimsInFrontJournalByDetails - 2017.12.27 at 12h 03m 21s.xml">
       <configuration name="TestRunnerFJ.searchClaimsInFrontJournalByDetails" configurationId="TestNG" />
@@ -1133,7 +1130,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1145,7 +1142,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1157,7 +1154,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41505376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41505376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1191,8 +1188,26 @@
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1274,7 +1289,6 @@
             <element signature="method#searchClaimsInFrontJournalByOperationAndState#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInSeveralDays#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchAllClaimsInOneDay#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByCardNumberPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByIdEkbPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByInnPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByPhonePhys#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1353,7 +1367,6 @@
             <element signature="method#searchClaimsInFrontJournalByOperationAndState#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInSeveralDays#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchAllClaimsInOneDay#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByCardNumberPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByIdEkbPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByInnPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByPhonePhys#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1411,13 +1424,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/database/OracleDataBase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/database/PostgreRequests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/database/PostgreDataBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1563,21 +1569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#4917#4918#0" expanded="true" />
-            <element signature="e#4995#4996#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunnerFJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
+        <state relative-caret-position="217">
+          <caret line="368" column="26" lean-forward="false" selection-start-line="368" selection-start-column="26" selection-end-line="368" selection-end-column="26" />
           <folding>
             <element signature="method#searchClaimsInFrontJournalByReference#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByDetails#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1585,7 +1580,6 @@
             <element signature="method#searchClaimsInFrontJournalByOperationAndState#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInSeveralDays#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchAllClaimsInOneDay#0;class#TestRunnerFJ#0" expanded="false" />
-            <element signature="method#searchClaimsInFrontJournalByCardNumberPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByIdEkbPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByInnPhys#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchClaimsInFrontJournalByPhonePhys#0;class#TestRunnerFJ#0" expanded="false" />
@@ -1599,6 +1593,25 @@
             <element signature="method#searchPrivateEnterpriseClaimsInFrontJournalByInn#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchPrivateEnterpriseClaimsInFrontJournalByPaymentAccount#0;class#TestRunnerFJ#0" expanded="false" />
             <element signature="method#searchJurFaceClaimsInFrontJournalByFioAndBirthday#0;class#TestRunnerFJ#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MethodUtils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/FrontJournalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
           </folding>
         </state>
       </provider>
