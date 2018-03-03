@@ -16,8 +16,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.List;
+import java.util.LinkedList;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -49,12 +48,11 @@ public class SetupAndTeardown {
     public void createEnvironmentPropertiesFile() {
         if(!new File("./build/allure-results/environment.properties").exists()) {
             File file = new File("./build/allure-results/environment.properties");
-            List<String> lines = Arrays.asList(
-                    "Platform=" + platform,
-                    "Browser=" + browserName,
-                    "Browser.Version=" + browserVersion,
-                    "DriverVersion=" + driverVersion
-            );
+            LinkedList<String> lines = new LinkedList<>();
+            lines.add("Platform=" + platform);
+            lines.add("Browser=" + browserName);
+            lines.add("Browser.Version=" + browserVersion);
+            lines.add("DriverVersion=" + driverVersion);
             Path filePath = Paths.get(file.getAbsolutePath());
             try {
                 Files.write(filePath, lines, Charset.forName("UTF-8"));
