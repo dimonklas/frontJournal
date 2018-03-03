@@ -52,7 +52,11 @@ public class SetupAndTeardown {
             lines.add("Platform=" + platform);
             lines.add("Browser=" + browserName);
             lines.add("Browser.Version=" + browserVersion);
-            lines.add("DriverVersion=" + driverVersion);
+            if(browserName.toLowerCase().equals("chrome")) {
+                lines.add("ChromeDriver.Version=" + driverVersion);
+            } else {
+                lines.add("GeckoDriver.Version=" + driverVersion);
+            }
             Path filePath = Paths.get(file.getAbsolutePath());
             try {
                 Files.write(filePath, lines, Charset.forName("UTF-8"));
