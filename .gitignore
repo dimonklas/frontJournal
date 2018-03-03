@@ -1,3 +1,5 @@
 build/
 .idea
 .build
+Будет удалено allure-results/
+Будет удалено out/

@@ -48,7 +48,7 @@ public class SetupAndTeardown {
     @AfterMethod(alwaysRun = true)
     public void createEnvironmentPropertiesFile() {
         if(!new File("./build/allure-results/environment.properties").exists()) {
-            File file = new File("./build/allure-results/environment.properties");
+            File file = new File("./build/allure-results/environment.propertiesffffffffffffffffff");
             List<String> lines = Arrays.asList(
                     "Platform=" + platform,
                     "Browser=" + browserName,
