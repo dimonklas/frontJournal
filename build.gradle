@@ -34,14 +34,14 @@ allure {
 }
 
 dependencies {
-    testCompile 'com.codeborne:selenide:4.8'
+    testCompile 'com.codeborne:selenide:4.10.01'
     testCompile 'org.testng:testng:6.11'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.7.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.9.1'
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
     testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.2'
-    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.0-BETA14'
-    compile group: 'io.qameta.allure', name: 'allure-assertj', version: '2.0-BETA18'
+    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.6.0'
+    compile group: 'io.qameta.allure', name: 'allure-assertj', version: '2.6.0'
     compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.4.0'
     testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '2.9.0'
 }

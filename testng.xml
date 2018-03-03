@@ -2,12 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Front Journal">
     <test name="Search claims by main attributes">
-        <groups>
-            <run>
-                <include name="FrontJournal"/>
-            </run>
-        </groups>
-
         <classes>
             <class name="TestRunnerFJ"/>
         </classes>
