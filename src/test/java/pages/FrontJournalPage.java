@@ -5,11 +5,7 @@ import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import java.text.ParseException;
-
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selenide.executeJavaScript;
+import static com.codeborne.selenide.Selenide.*;
 
 public class FrontJournalPage {
     Utils utils = new Utils();

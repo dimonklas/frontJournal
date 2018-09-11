@@ -23,6 +23,20 @@ public class Utils {
         WebDriverRunner.getWebDriver().manage().deleteCookieNamed(cookieName);
     }
 
+    /**
+     * Метод для изменения значения текущей даты
+     * @param format - формат даты, например "yyyy-MM-dd"
+     * @param timeUnit - параметр для изменения, примеры значений:
+     *       14 - Calendar.MILLISECOND
+     *       13 - Calendar.SECOND
+     *       12 - Calendar.MINUTE
+     *       10 - Calendar.HOUR
+     *        5 - Calendar.DAY_OF_MONTH
+     *        2 - Calendar.MONTH
+     *        1 - Calendar.YEAR
+     * @param count - количество timeUnit's для изменения
+     * @return измененное значение текущей даты в заданом формате
+     */
     public static String changeCurrentDate(String format, int timeUnit, int count) {
         Locale locale = new Locale("ru");
         Calendar cal = Calendar.getInstance();
@@ -31,6 +45,22 @@ public class Utils {
         return formatDate.format(cal.getTime());
     }
 
+    /**
+     * Метод для изменения переданой даты
+     * @param date - дата для изменения
+     * @param dateFormat - формат даты
+     * @param param - параметр для изменения, примеры значений:
+     *       14 - Calendar.MILLISECOND
+     *       13 - Calendar.SECOND
+     *       12 - Calendar.MINUTE
+     *       10 - Calendar.HOUR
+     *        5 - Calendar.DAY_OF_MONTH
+     *        2 - Calendar.MONTH
+     *        1 - Calendar.YEAR
+     * @param count - количество timeUnit's для изменения
+     * @return измененное значение переданой даты
+     * @throws Exception
+     */
     public static String changeDate(String date, String dateFormat, int param, int count) throws Exception {
         Locale locale = new Locale("ru");
         SimpleDateFormat formatDate = new SimpleDateFormat(dateFormat, locale);
@@ -61,6 +91,13 @@ public class Utils {
         return dateFormat.format(verifiableDate);
     }
 
+    /**
+     * Преобразование Timestamp в дату нужного формата
+     * @param date - значение Timestamp
+     * @param endFormat - формат в который нужно преобразовать дату
+     * @return дата в заданном формате
+     * @throws ParseException
+     */
     public String changeDateFormatFromTimestamp(String date, String endFormat) throws ParseException {
         Locale locale = new Locale("ru");
         Date verifiableDate = new Date(Long.parseLong(date));
