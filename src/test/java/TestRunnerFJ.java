@@ -1,7 +1,6 @@
 import MethodUtils.DataBaseUtils;
 import MethodUtils.Utils;
 import database.MongoDB;
-import io.qameta.allure.Description;
 import listeners.AllureListener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -224,7 +223,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -24),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -24),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -273,7 +272,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -322,7 +321,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -421,7 +420,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -480,7 +479,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -539,7 +538,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -596,7 +595,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -700,7 +699,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "WAVE","UNIPACKSAS", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -764,7 +763,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addJurUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -824,7 +823,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -884,7 +883,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addJurUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -942,7 +941,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addJurUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -1002,7 +1001,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addJurUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -1062,7 +1061,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -1122,7 +1121,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addPrivateEnterpriseUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
@@ -1182,7 +1181,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         refs.add(utils.generateClaimRef());
 
         MongoDB.INSTANCE.addJurUnfinishedClaims(
-            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 11, -2),
+            refs.get(1), "DIINT", "CASHCHARGE", utils.changeCurrentDate("yyyy-MM-dd HH:mm", 10, -2),
             confVars.OPER_LDAP, confVars.FRONT_JOURNAL_URL
         );
 
