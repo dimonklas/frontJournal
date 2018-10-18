@@ -27,25 +27,25 @@ public class FrontJournalPage {
     private By startSearchDate = By.id("input_4");
     private By onlyMyClaimsRadiobutton = By.cssSelector("[ng-model='ctrl.onlyMyOperationsCheckboxEnable']");
     private By chooseClientRadiobutton = By.cssSelector("[ng-model='ctrl.searchByClientCheckboxEnable']");
-    private By searchByPhysCardNumberButton = By.cssSelector("#tab-content-29" +
+    private By searchByPhysCardNumberButton = By.cssSelector("#tab-content-30" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.PAN)']");
-    private By searchByPhysIdEkbButton = By.cssSelector("#tab-content-29" +
+    private By searchByPhysIdEkbButton = By.cssSelector("#tab-content-30" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.CLID)']");
-    private By searchByPhysInnButton = By.cssSelector("#tab-content-29" +
+    private By searchByPhysInnButton = By.cssSelector("#tab-content-30" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.INN)']");
-    private By searchByPhysDocSeriesAndNumberButton = By.cssSelector("#tab-content-29" +
+    private By searchByPhysDocSeriesAndNumberButton = By.cssSelector("#tab-content-30" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.DOC)']");
-    private By searchByPhysFioAndBirthdayButton = By.cssSelector("#tab-content-29" +
+    private By searchByPhysFioAndBirthdayButton = By.cssSelector("#tab-content-30" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.FIO_BD)']");
-    private By searchByJurCardNumberButton = By.cssSelector("#tab-content-30" +
+    private By searchByJurCardNumberButton = By.cssSelector("#tab-content-31" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.PAN)']");
-    private By searchByJurIdEkbButton = By.cssSelector("#tab-content-30" +
+    private By searchByJurIdEkbButton = By.cssSelector("#tab-content-31" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.CLID)']");
-    private By searchByJurInnOkpoButton = By.cssSelector("#tab-content-30" +
+    private By searchByJurInnOkpoButton = By.cssSelector("#tab-content-31" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.INN_OKPO)']");
-    private By searchByJurPaymentAccountButton = By.cssSelector("#tab-content-30" +
+    private By searchByJurPaymentAccountButton = By.cssSelector("#tab-content-31" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.ACC_INFO)']");
-    private By searchByJurFioAndBirthdayButton = By.cssSelector("#tab-content-30" +
+    private By searchByJurFioAndBirthdayButton = By.cssSelector("#tab-content-31" +
         " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.FIO_BD)']");
     private By cardNumberInput = By.cssSelector("input[name='pan']");
     private By idEkbInput = By.cssSelector("input[name='id']");
