@@ -1,5 +1,6 @@
 package autotest;
 
+
 import org.apache.log4j.Logger;
 
 import java.io.FileInputStream;
@@ -17,7 +18,6 @@ public class ConfigurationVariables {
     private static Properties configurationData = new Properties();
     private static Properties testData = new Properties();
 
-    /****************************************** Конфигурационные данные ***********************************************/
     public String USER_LOGIN = System.getProperty("userLogin");
     public String USER_PASSWORD = System.getProperty("userPassword");
     public String CURRENT_BROWSER = System.getProperty("currentBrowser");
@@ -34,7 +34,6 @@ public class ConfigurationVariables {
     public String MONGO_USERNAME = getProperty(configurationData, "mongoUsername");
     public String MONGO_PASSWORD = getProperty(configurationData, "mongoPassword");
 
-    /*********************************************** Тестовые данные **************************************************/
     public String OPER_LDAP = getProperty(testData, "operLdap");
     public String MODIFY_RECORD_URL = getProperty(testData, "modifyRecordUrl");
     public String PHYS_CARD_NUMBER = getProperty(testData, "physCardNumber");
@@ -75,7 +74,7 @@ public class ConfigurationVariables {
             USER_LOGIN = getProperty(configurationData, "userLogin");
 
         if (USER_PASSWORD == null || USER_PASSWORD.equalsIgnoreCase(""))
-            USER_PASSWORD = getProperty(configurationData, "userPassword");
+            USER_PASSWORD = getProperty(configurationData, "userPassword2");
 
         if (CURRENT_BROWSER == null || CURRENT_BROWSER.equalsIgnoreCase(""))
             CURRENT_BROWSER = getProperty(configurationData, "currentBrowser");
@@ -90,17 +89,20 @@ public class ConfigurationVariables {
 
     private static void fillMyProperties(Properties properties, String filePath) {
         InputStreamReader input;
+       // FileInputStream fileInputStream;
         try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
+           // fileInputStream = new FileInputStream(filePath);
             input = new InputStreamReader(fileInputStream, "UTF8");
 
             // считываем свойства
             properties.load(input);
         } catch (java.io.FileNotFoundException e) {
-            logger.fatal("Ошибка. Файл config.properties не был найден. " + e);
+            logger.error("Ошибка. Файл config.properties не был найден." + filePath, e);
         } catch (java.io.IOException e) {
-            logger.fatal("IO ошибка в пользовательском методе." + e);
+            logger.error("IO ошибка в пользовательском методе.", e);
         }
     }
+
 
     private static String getProperty(Properties properties, String propertyKey) {
         return properties.getProperty(propertyKey);
@@ -110,3 +112,4 @@ public class ConfigurationVariables {
         return instance;
     }
 }
+

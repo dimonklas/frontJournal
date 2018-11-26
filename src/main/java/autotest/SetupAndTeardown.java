@@ -31,41 +31,6 @@ public class SetupAndTeardown {
     private String locale = CV.locale;
     private String browser = CV.CURRENT_BROWSER;
 
-    String browserName;
-    String browserVersion;
-    String platform;
-    String driverVersion;
-
-//    @BeforeSuite
-//    protected void setUp() {
-//
-//        Configuration.browser = CV.CURRENT_BROWSER;
-//        Configuration.collectionsTimeout=10000;
-//        Configuration.timeout = 6000;
-//    }
-
-
-//    @AfterMethod(alwaysRun = true)
-//    public void createEnvironmentPropertiesFile() {
-//        if(!new File("./build/allure-results/environment.properties").exists()) {
-//            File file = new File("./build/allure-results/environment.properties");
-//            LinkedList<String> lines = new LinkedList<>();
-//            lines.add("Platform=" + platform);
-//            lines.add("Browser=" + browserName);
-//            lines.add("Browser.Version=" + browserVersion);
-//            if(browserName.equalsIgnoreCase("chrome")) {
-//                lines.add("ChromeDriver.Version=" + driverVersion);
-//            } else {
-//                lines.add("GeckoDriver.Version=" + driverVersion);
-//            }
-//            Path filePath = Paths.get(file.getAbsolutePath());
-//            try {
-//                Files.write(filePath, lines, Charset.forName("UTF-8"));
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
 
     @BeforeSuite(alwaysRun = true)
     public void SetUpBrowser() throws Exception {
@@ -103,25 +68,10 @@ public class SetupAndTeardown {
 
     @BeforeMethod
     public void login() {
-//        if(browserName == null && browserVersion == null && platform == null && driverVersion == null) setEnvironment();
-        baseUrl = CV.BASE_URL;
         LoginPage loginPage = new LoginPage();
-        LOG.info("бэйс урл " + CV.BASE_URL);
         open(baseUrl);
         loginPage.login(CV.USER_LOGIN, CV.USER_PASSWORD);
     }
-
-//    private void setEnvironment() {
-//        Capabilities cap = ((RemoteWebDriver) getWebDriver()).getCapabilities();
-//        browserName = cap.getBrowserName();
-//        browserVersion = cap.getVersion();
-//        platform = cap.getPlatform().toString();
-//        if(browserName.equalsIgnoreCase("chrome")) {
-//            driverVersion = ChromeDriverManager.getInstance().getDownloadedVersion();
-//        } else {
-//            driverVersion = FirefoxDriverManager.getInstance().getDownloadedVersion();
-//        }
-//    }
 
     @BeforeSuite(alwaysRun = true)
     void emptyDownloadsDir()  {

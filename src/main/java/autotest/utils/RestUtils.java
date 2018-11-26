@@ -1,8 +1,9 @@
 package autotest.utils;
 
-import io.qameta.allure.Step;
 import autotest.ConfigurationVariables;
+import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Selenide.sleep;
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasXPath;
 
@@ -43,8 +44,8 @@ public class RestUtils {
             when().
             post(confVars.MODIFY_RECORD_URL).
             then().
-            body(hasXPath("//*[self::answer[@status='OK']]"));
-        Thread.sleep(3000);
+            body(hasXPath("//answer[@status='OK']"));
+        sleep(5 * 1000);
     }
 
     public String getTotp(){

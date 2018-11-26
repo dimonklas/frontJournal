@@ -155,7 +155,7 @@ public enum MongoDB {
 
         try {
             while(cursor.hasNext()) {
-                lastClaimsInfo.add(cursor.next().toJson().toString());
+                lastClaimsInfo.add(cursor.next().toJson());
             }
         } finally {
             cursor.close();
@@ -181,7 +181,7 @@ public enum MongoDB {
 
         try {
             while(cursor.hasNext()) {
-                claimsInfo.add(cursor.next().toJson().toString());
+                claimsInfo.add(cursor.next().toJson());
             }
         } finally {
             cursor.close();
@@ -200,7 +200,7 @@ public enum MongoDB {
 
         try {
             while(cursor.hasNext()) {
-                claimsInfo.add(cursor.next().toJson().toString());
+                claimsInfo.add(cursor.next().toJson());
             }
         } finally {
             cursor.close();
