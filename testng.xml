@@ -3,7 +3,7 @@
 <suite name="Front Journal">
     <test name="Search claims by main attributes">
         <classes>
-            <class name="TestRunnerFJ"/>
+            <class name="autotest.TestRunnerFJ"/>
         </classes>
     </test>
 </suite>

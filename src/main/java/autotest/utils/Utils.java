@@ -1,8 +1,12 @@
-package MethodUtils;
+package autotest.utils;
 
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Step;
+import org.xml.sax.InputSource;
 
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+import java.io.StringReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -103,5 +107,13 @@ public class Utils {
         Date verifiableDate = new Date(Long.parseLong(date));
         SimpleDateFormat dateFormat = new SimpleDateFormat(endFormat, locale);
         return dateFormat.format(verifiableDate);
+    }
+
+    //Поиск элемента XML по xPath-выражению
+    public static String xPath(String xpathQuery, String xml) throws XPathExpressionException {
+        return XPathFactory
+                .newInstance()
+                .newXPath()
+                .evaluate(xpathQuery, (new InputSource(new StringReader(xml))) );
     }
 }

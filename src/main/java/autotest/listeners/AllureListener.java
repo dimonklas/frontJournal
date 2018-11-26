@@ -1,4 +1,4 @@
-package listeners;
+package autotest.listeners;
 
 import com.codeborne.selenide.Screenshots;
 import com.google.common.io.Files;
