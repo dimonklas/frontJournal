@@ -2,20 +2,18 @@ package autotest.pages;
 
 import autotest.utils.Utils;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Condition.enabled;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class FrontJournalPage {
-    Utils utils = new Utils();
 
-    private By prodRefInput = By.id("input_10");
-    private By detailsInput = By.id("input_12");
-    private By operationInput = By.id("input-7");
-    private By stateSelect = By.id("select_8");
-    private By searchButton = By.cssSelector(".search-params-find-button");
-    private By findedOperationsText = By.cssSelector(".search-params-finded-operations-title");
+    private Utils utils = new Utils();
+
     private By claimDateText = By.cssSelector(".search-result-create-date-time");
     private By claimNameText = By.cssSelector(".search-result-operation-name");
     private By claimFioText = By.cssSelector(".search-result-fio");
@@ -23,69 +21,31 @@ public class FrontJournalPage {
     private By claimLdapText = By.cssSelector(".search-result-ldap");
     private By claimStateText = By.cssSelector(".search-result-state-name");
     private By claimDetailsText = By.cssSelector(".search-result-details");
-    private By unipacksasLabel = By.xpath("//span[contains(., 'Оформить карту Универсальная')]");
-    private By startSearchDate = By.id("input_4");
-    private By onlyMyClaimsRadiobutton = By.cssSelector("[ng-model='ctrl.onlyMyOperationsCheckboxEnable']");
-    private By chooseClientRadiobutton = By.cssSelector("[ng-model='ctrl.searchByClientCheckboxEnable']");
-    private By searchByPhysCardNumberButton = By.cssSelector("#tab-content-30" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.PAN)']");
-    private By searchByPhysIdEkbButton = By.cssSelector("#tab-content-30" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.CLID)']");
-    private By searchByPhysInnButton = By.cssSelector("#tab-content-30" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.INN)']");
-    private By searchByPhysDocSeriesAndNumberButton = By.cssSelector("#tab-content-30" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.DOC)']");
-    private By searchByPhysFioAndBirthdayButton = By.cssSelector("#tab-content-30" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.FIO_BD)']");
-    private By searchByJurCardNumberButton = By.cssSelector("#tab-content-31" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.PAN)']");
-    private By searchByJurIdEkbButton = By.cssSelector("#tab-content-31" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.CLID)']");
-    private By searchByJurInnOkpoButton = By.cssSelector("#tab-content-31" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.INN_OKPO)']");
-    private By searchByJurPaymentAccountButton = By.cssSelector("#tab-content-31" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.ACC_INFO)']");
-    private By searchByJurFioAndBirthdayButton = By.cssSelector("#tab-content-31" +
-        " [ng-click='ctrl.changeSearchBy(ctrl.searchByConsts.FIO_BD)']");
-    private By cardNumberInput = By.cssSelector("input[name='pan']");
-    private By idEkbInput = By.cssSelector("input[name='id']");
-    private By innInput = By.cssSelector("input[name='okpo']");
-    private By phoneInput = By.cssSelector("input[name='allPhone']");
-    private By docSeriesInput = By.cssSelector("input[name='dser']");
-    private By docNumberInput = By.cssSelector("input[name='dnum']");
-    private By lastNameInput = By.cssSelector("input[name='lname']");
-    private By firstNameInput = By.cssSelector("input[name='fname']");
-    private By patronymicInput = By.cssSelector("input[name='mname']");
-    private By birthdateInput = By.cssSelector("[name='db'] input");
-    private By paymentAccountInput = By.cssSelector("input[name='accInfo']");
-    private By continueButton = By.cssSelector("button.client-search-params-continue-btn");
-    private By editSearchParamsButton = By.cssSelector(".client-search-params-info-edit-icon");
-    private By selectJurTabButton = By.xpath("//md-tab-item/span[text()='Юр.лицо']");
 
 
     @Step("Ввести '{text}' в поле референса заявки")
     public void fillProdRefInput(String text) {
-        $(prodRefInput).setValue(text);
+        $(By.id("input_10")).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для поиска")
     public void fillDetailsInput(String text) {
-        $(detailsInput).setValue(text);
+        $(By.id("input_12")).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для выбора операции")
     public void fillOperationInput(String text) {
-        $(operationInput).setValue(text);
+        $(By.id("input-7")).setValue(text);
     }
 
     @Step("Нажать на кнопку 'Найти'")
     public void clickSearchButton() {
-        $(searchButton).click();
+        $(By.cssSelector(".search-params-find-button")).click();
     }
 
     @Step("Дождаться изменения количества отображаемых заявок")
     public void waitingForSearchResults(String text) {
-        $(findedOperationsText).waitUntil(Condition.text(text), 15000);
+        $(By.cssSelector(".search-params-finded-operations-title")).waitUntil(Condition.text(text), 15000);
     }
 
     @Step("Получить дату заявки")
@@ -139,12 +99,12 @@ public class FrontJournalPage {
 
     @Step("Выбрать операцию 'Оформить карту Универсальная'")
     public void clickUnipacksasLabel() {
-        $(unipacksasLabel).click();
+        $x("//span[contains(., 'Оформить карту Универсальная')]").click();
     }
 
     @Step("Выбрать состояние '{state}' для операции")
     public void selectOperationState(String state) {
-        $(stateSelect).click();
+        $(By.id("select_8")).click();
         $(By.cssSelector("md-option[value='" + state.toUpperCase() + "']")).click();
     }
 
@@ -155,7 +115,7 @@ public class FrontJournalPage {
      */
     @Step("Указать дату начала поиска равной {date} с помощью js")
     public void setStartSearchDate(String date) throws Exception {
-        $(startSearchDate).click();
+        $(By.id("input_4")).click();
         selectDateInDatepicker(date);
     }
 
@@ -165,7 +125,7 @@ public class FrontJournalPage {
 
         Thread.sleep(1000);
         $(By.xpath("//td[contains(@class, 'md-calendar-selected-date')]/../..//td[@class='md-calendar-month-label']"))
-            .shouldBe(Condition.visible).click();
+            .shouldBe(visible).click();
         $(By.xpath("//td/span[text()='" + monthName + "']")).shouldBe(Condition.enabled).click();
         $(By.xpath(
             "//td[contains(@class, \"md-calendar-month-label\") and contains(., '" + monthName + "')]/../.." +
@@ -176,136 +136,137 @@ public class FrontJournalPage {
 
     @Step("Нажать на радиобаттон 'Только мои заявки'")
     public void clickOnlyMyClaimsRadiobutton() {
-        $(onlyMyClaimsRadiobutton).click();
+        $(By.cssSelector("[ng-model='ctrl.onlyMyOperationsCheckboxEnable']")).click();
     }
 
     @Step("Нажать на радиобаттон 'Выбрать клиента'")
     public void clickChooseClientRadiobutton() {
-        $(chooseClientRadiobutton).click();
+        $(By.cssSelector("[ng-model='ctrl.searchByClientCheckboxEnable']")).click();
     }
 
     @Step("Нажать на кнопку 'Поиск по номеру карты'")
     public void clickSearchByPhysCardNumberButton() {
-        $(searchByPhysCardNumberButton).click();
+        $$x(".//button[contains(@ng-click,'PAN')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по номеру карты' для юр.лица")
     public void clickSearchByJurCardNumberButton() {
-        $(searchByJurCardNumberButton).click();
+        $$x(".//button[contains(@ng-click,'PAN')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по ID в ЕКБ'")
     public void clickSearchByPhysIdEkbButton() {
-        $(searchByPhysIdEkbButton).click();
+        $$x(".//button[contains(@ng-click,'CLID')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по ID в ЕКБ' для юр.лица")
     public void clickSearchByJurIdEkbButton() {
-        $(searchByJurIdEkbButton).click();
+        $$x(".//button[contains(@ng-click,'CLID')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по ИНН'")
     public void clickSearchByPhysInnButton() {
-        $(searchByPhysInnButton).click();
+        $$x(".//button[contains(@ng-click,'INN')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по ИНН / ОКПО'")
     public void clickSearchByJurInnOkpoButton() {
-        $(searchByJurInnOkpoButton).click();
+        $$x(".//button[contains(@ng-click,'INN')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по номеру счета'")
     public void clickSearchByJurPaymentAccountButton() {
-        $(searchByJurPaymentAccountButton).click();
+        $x(".//button[contains(@ng-click,'ACC_INFO')]").shouldBe(visible).click();
     }
 
     @Step("Нажать на кнопку 'Поиск по документу'")
     public void clickSearchByPhysDocSeriesAndNumberButton() {
-        $(searchByPhysDocSeriesAndNumberButton).click();
+        $x(".//button[contains(@ng-click,'DOC')]").shouldBe(visible).click();
     }
 
     @Step("Нажать на кнопку 'Поиск по ФИО и ДР'")
     public void clickSearchByPhysFioAndBirthdayButton() {
-        $(searchByPhysFioAndBirthdayButton).click();
+        $$x(".//button[contains(@ng-click,'FIO_BD')]").filter(visible).first().click();
     }
 
     @Step("Нажать на кнопку 'Поиск по ФИО и ДР' для юрлица")
     public void clickSearchByJurFioAndBirthdayButton() {
-        $(searchByJurFioAndBirthdayButton).click();
+        $$x(".//button[contains(@ng-click,'FIO_BD')]").filter(visible).first().click();
     }
 
     @Step("Выбрать вкладку для поиска клиента 'Юр.лицо'")
     public void clickSelectJurTabButton() {
-        $(selectJurTabButton).click();
+        $x("//md-tab-item/span[text()='Юр.лицо' or text()='Юр.особа']").click();
     }
 
     @Step("Ввести '{text}' в поле для ввода номера карты")
     public void fillCardNumberInput(String text) {
-        $(cardNumberInput).setValue(text);
+        $x(".//input[@name='pan']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода ID с ЕКБ")
     public void fillIdEkbInput(String text) {
-        $(idEkbInput).setValue(text);
+        $x(".//input[@name='id']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода ИНН")
     public void fillInnInput(String text) {
-        $(innInput).setValue(text);
+        $x(".//input[@name='okpo']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода номера телефона")
     public void fillPhoneInput(String text) {
-        $(phoneInput).setValue(text);
+        $x(".//input[@name='allPhone']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода серии документа")
     public void fillDocSeriesInput(String text) {
-        $(docSeriesInput).setValue(text);
+        $x(".//input[@name='dser']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода номера документа")
     public void fillDocNumberInput(String text) {
-        $(docNumberInput).setValue(text);
+        $x(".//input[@name='dnum']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода фамилии")
     public void fillLastNameInput(String text) {
-        $(lastNameInput).setValue(text);
+        $x(".//input[@name='lname']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода имени")
     public void fillFirstNameInput(String text) {
-        $(firstNameInput).setValue(text);
+        $x(".//input[@name='fname']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода отчества")
     public void fillPatronymicInput(String text) {
-        $(patronymicInput).setValue(text);
+        $x(".//input[@name='mname']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Ввести '{text}' в поле для ввода номера счета")
     public void fillPaymentAccountInput(String text) {
-        $(paymentAccountInput).setValue(text);
+        $x(".//input[@name='accInfo']").shouldBe(visible, enabled).setValue(text);
     }
 
     @Step("Нажать на кнопку 'Продолжить'")
     public void clickContinueButton() {
-        $(continueButton).click();
+        $(By.cssSelector("button.client-search-params-continue-btn")).click();
     }
 
     @Step("Нажать на кнопку редактирования параметров поиска по клиенту")
     public void clickEditSearchParamsButton() {
-        $(editSearchParamsButton).click();
+        $(By.cssSelector(".client-search-params-info-edit-icon")).click();
     }
 
     @Step("Выбрать дату рождения")
     public void setBirthdate(String birthdate) throws Exception {
+        SelenideElement birthdateInput = $(By.cssSelector("[name='db'] input")).shouldBe(visible);
         String year = birthdate.substring(6);
         String month = utils.changeDateFormat(birthdate, "dd-MM-yyyy", "MMMM").substring(0, 3);
         String day = birthdate.substring(0, 2);
-        executeJavaScript("arguments[0].removeAttribute('readonly','readonly');", $(birthdateInput));
-        $(birthdateInput).setValue(birthdate);
+        executeJavaScript("arguments[0].removeAttribute('readonly','readonly');", birthdateInput);
+        birthdateInput.setValue(birthdate);
         $(By.xpath("//td[text()='" + year + "']/../..//td/span[text()='" + month + "']")).click();
         $(By.xpath(
             "//td[contains(@class, \"md-calendar-month-label\") and contains(., '" + month + "')]/../.." +

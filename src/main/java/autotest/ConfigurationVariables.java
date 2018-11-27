@@ -74,7 +74,7 @@ public class ConfigurationVariables {
             USER_LOGIN = getProperty(configurationData, "userLogin");
 
         if (USER_PASSWORD == null || USER_PASSWORD.equalsIgnoreCase(""))
-            USER_PASSWORD = getProperty(configurationData, "userPassword2");
+            USER_PASSWORD = getProperty(configurationData, "userPassword");
 
         if (CURRENT_BROWSER == null || CURRENT_BROWSER.equalsIgnoreCase(""))
             CURRENT_BROWSER = getProperty(configurationData, "currentBrowser");
@@ -89,11 +89,8 @@ public class ConfigurationVariables {
 
     private static void fillMyProperties(Properties properties, String filePath) {
         InputStreamReader input;
-       // FileInputStream fileInputStream;
         try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
-           // fileInputStream = new FileInputStream(filePath);
             input = new InputStreamReader(fileInputStream, "UTF8");
-
             // считываем свойства
             properties.load(input);
         } catch (java.io.FileNotFoundException e) {
