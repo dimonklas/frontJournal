@@ -100,7 +100,7 @@ public class SetupAndTeardown {
         FileOutputStream fos = null;
         try {
             Properties props = new Properties();
-            fos = new FileOutputStream("allure-results/environment.properties");
+            fos = new FileOutputStream("target/allure-results/environment.properties");
 
             ofNullable(baseUrl).ifPresent(s -> props.setProperty("project.URL", CV.BASE_URL));
             ofNullable(getProperty("browser")).ifPresent(s -> props.setProperty("browser", s));
