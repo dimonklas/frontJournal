@@ -128,13 +128,13 @@ public class TestRunnerFJ extends SetupAndTeardown {
         Long ref = utils.generateClaimRef();
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            ref, "WAVE","UNIPACKSAS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), CV.OPER_LDAP,
+            ref, "WAVE","UNIREQ", utils.getCurrentDate("yyyy-MM-dd HH:mm"), CV.OPER_LDAP,
             CV.FRONT_JOURNAL_URL
         );
 
         frontJournal = page(FrontJournalPage.class);
 
-        frontJournal.fillOperationInput("универсальная");
+        frontJournal.fillOperationInput("Выдать карту");
 
         frontJournal.clickUnipacksasLabel();
 
@@ -168,13 +168,13 @@ public class TestRunnerFJ extends SetupAndTeardown {
         Long ref = utils.generateClaimRef();
 
         MongoDB.INSTANCE.addUnfinishedClaims(
-            ref, "WAVE","UNIPACKSAS", utils.getCurrentDate("yyyy-MM-dd HH:mm"), CV.OPER_LDAP,
+            ref, "WAVE","UNIREQ", utils.getCurrentDate("yyyy-MM-dd HH:mm"), CV.OPER_LDAP,
             CV.FRONT_JOURNAL_URL
         );
 
         frontJournal = page(FrontJournalPage.class);
 
-        frontJournal.fillOperationInput("универсальная");
+        frontJournal.fillOperationInput("Выдать карту");
 
         frontJournal.clickUnipacksasLabel();
 

@@ -4,7 +4,6 @@ import autotest.pages.LoginPage;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -70,7 +69,7 @@ public class SetupAndTeardown {
     public void login() {
         LoginPage loginPage = new LoginPage();
         open(baseUrl);
-        loginPage.login(CV.USER_LOGIN, CV.USER_PASSWORD);
+        if (loginPage.needAuth()) loginPage.login(CV.USER_LOGIN, CV.USER_PASSWORD);
     }
 
     @BeforeSuite(alwaysRun = true)
@@ -97,10 +96,8 @@ public class SetupAndTeardown {
 
     @AfterSuite(alwaysRun = true)
     public void createEnvironmentProps() {
-        FileOutputStream fos = null;
-        try {
+        try (FileOutputStream fos = new FileOutputStream("target/allure-results/environment.properties")){
             Properties props = new Properties();
-            fos = new FileOutputStream("target/allure-results/environment.properties");
 
             ofNullable(baseUrl).ifPresent(s -> props.setProperty("project.URL", CV.BASE_URL));
             ofNullable(getProperty("browser")).ifPresent(s -> props.setProperty("browser", s));
@@ -114,8 +111,6 @@ public class SetupAndTeardown {
             fos.close();
         } catch (IOException e) {
             LOG.error("IO problem when writing allure properties file", e);
-        } finally {
-            IOUtils.closeQuietly(fos);
         }
     }
 }

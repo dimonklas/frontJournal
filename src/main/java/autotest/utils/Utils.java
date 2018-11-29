@@ -110,10 +110,11 @@ public class Utils {
     }
 
     //Поиск элемента XML по xPath-выражению
-    public static String xPath(String xpathQuery, String xml) throws XPathExpressionException {
-        return XPathFactory
-                .newInstance()
-                .newXPath()
-                .evaluate(xpathQuery, (new InputSource(new StringReader(xml))) );
+    public static String xPath(String xpathQuery, String xml) {
+        try {
+            return XPathFactory.newInstance().newXPath().evaluate(xpathQuery, (new InputSource(new StringReader(xml))) );
+        } catch (XPathExpressionException e) {
+            throw new RuntimeException("Ошибка парсинга xPath выражения " + xpathQuery + "\nXML:\n" + xml);
+        }
     }
 }

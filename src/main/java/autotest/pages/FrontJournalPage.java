@@ -97,9 +97,9 @@ public class FrontJournalPage {
         return result;
     }
 
-    @Step("Выбрать операцию 'Оформить карту Универсальная'")
+    @Step("Выбрать операцию 'Выдать карту'")
     public void clickUnipacksasLabel() {
-        $x("//span[contains(., 'Оформить карту Универсальная')]").click();
+        $x("//span[contains(., 'Выдать карту')]").click();
     }
 
     @Step("Выбрать состояние '{state}' для операции")
