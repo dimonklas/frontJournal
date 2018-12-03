@@ -72,7 +72,7 @@ public class TestRunnerFJ extends SetupAndTeardown {
         frontJournal.waitingForSearchResults("0");
     }
 
-    @Test(groups = "FrontJournal", priority = 10, description = "Поиск по основным параметрам. Поиск заявки по деталям")
+    @Test(enabled = false, groups = "FrontJournal", priority = 10, description = "Поиск по основным параметрам. Поиск заявки по деталям")
     public void searchClaimsInFrontJournalByDetails() throws Exception {
         MongoDB.INSTANCE.deleteClaimsOlderDate(CV.OPER_LDAP, Utils.changeCurrentDate("yyyy-MM-dd", 5, -8));
 
