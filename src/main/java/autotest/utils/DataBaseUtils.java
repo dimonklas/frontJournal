@@ -1,11 +1,11 @@
-package MethodUtils;
+package autotest.utils;
 
-import database.MongoDB;
+import autotest.database.MongoDB;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class DataBaseUtils {
-    Utils utils = new Utils();
+    private Utils utils = new Utils();
 
     public Map<String, String> getClaimsDataFromDataBase(String ref) throws Exception {
         Map<String, String> updatedData = new LinkedHashMap<String, String>();
@@ -15,7 +15,7 @@ public class DataBaseUtils {
         String dateFromDB = utils.getRegex("\"dm\"[\\s\\S]*\"\\$date\"\\s*:\\s*([\\d]*)", claimInfo);
         String date = utils.changeDateFormatFromTimestamp(dateFromDB, "dd MMM yyyy HH:mm");
 
-        updatedData.put("date", utils.changeDate(date, "dd MMM yyyy HH:mm", 11, 0));
+        updatedData.put("date", Utils.changeDate(date, "dd MMM yyyy HH:mm", 11, 0));
 
         String operation = utils.getRegex("\"idp\"\\s*:\\s*\"([\\S]+?)\"", claimInfo);
         String idSystem =  utils.getRegex("\"ids\"\\s*:\\s*\"([\\S]+?)\"", claimInfo);

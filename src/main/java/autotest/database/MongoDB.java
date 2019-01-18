@@ -1,6 +1,9 @@
-package database;
+package autotest.database;
 
-import com.mongodb.*;
+import autotest.ConfigurationVariables;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
@@ -9,8 +12,8 @@ import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Projections;
 import com.mongodb.client.model.Sorts;
 import io.qameta.allure.Step;
+import org.apache.log4j.Logger;
 import org.bson.Document;
-import setup.ConfVars;
 
 import java.net.UnknownHostException;
 import java.text.ParseException;
@@ -19,14 +22,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.mongodb.client.model.Filters.and;
-import static com.mongodb.client.model.Filters.eq;
-import static com.mongodb.client.model.Filters.gt;
+import static com.mongodb.client.model.Filters.*;
 
 public enum MongoDB {
     INSTANCE;
 
-    ConfVars confVars = ConfVars.getInstance();
+    ConfigurationVariables confVars = ConfigurationVariables.getInstance();
+    private final Logger logger = Logger.getLogger(MongoDB.class);
     private MongoClient mongoClient;
     String serverIP, dbName, dbUsername, dbPassword;
     int port;
@@ -36,7 +38,7 @@ public enum MongoDB {
             try {
                 mongoClient = getClient();
             } catch (UnknownHostException e) {
-                ConfVars.logger.error(e);
+                logger.error(e);
             }
 
         }
@@ -153,7 +155,7 @@ public enum MongoDB {
 
         try {
             while(cursor.hasNext()) {
-                lastClaimsInfo.add(cursor.next().toJson().toString());
+                lastClaimsInfo.add(cursor.next().toJson());
             }
         } finally {
             cursor.close();
@@ -179,7 +181,7 @@ public enum MongoDB {
 
         try {
             while(cursor.hasNext()) {
-                claimsInfo.add(cursor.next().toJson().toString());
+                claimsInfo.add(cursor.next().toJson());
             }
         } finally {
             cursor.close();
@@ -198,7 +200,7 @@ public enum MongoDB {
 
         try {
             while(cursor.hasNext()) {
-                claimsInfo.add(cursor.next().toJson().toString());
+                claimsInfo.add(cursor.next().toJson());
             }
         } finally {
             cursor.close();

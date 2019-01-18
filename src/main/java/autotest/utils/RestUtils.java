@@ -1,13 +1,14 @@
-package rest;
+package autotest.utils;
 
+import autotest.ConfigurationVariables;
 import io.qameta.allure.Step;
-import setup.ConfVars;
 
+import static com.codeborne.selenide.Selenide.sleep;
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasXPath;
 
 public class RestUtils {
-    ConfVars confVars = ConfVars.getInstance();
+    private ConfigurationVariables confVars = ConfigurationVariables.getInstance();
 
     @Step("Добавить заявку 'IDENTPHYS' с референсом {ref} через сервис")
     public void addClaim(String date, String ref, String ldap) throws Exception {
@@ -43,7 +44,17 @@ public class RestUtils {
             when().
             post(confVars.MODIFY_RECORD_URL).
             then().
-            body(hasXPath("//*[self::answer[@status='OK']]"));
-        Thread.sleep(3000);
+            body(hasXPath("//answer[@status='OK']"));
+        sleep(5 * 1000);
+    }
+
+    public String getTotp(){
+        return
+                given()
+                        .relaxedHTTPSValidation()
+                        .header("Content-Type", "text/xml;charset=UTF-8").
+                when()
+                        .get(confVars.TOTP_URL)
+                        .asString();
     }
 }
